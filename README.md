@@ -62,5 +62,4 @@ I plan to examine the relationship between wine production patterns and climate 
 [Source 1](https://www.economist.com/graphic-detail/2019/11/22/climate-change-is-forcing-winemakers-to-move-further-from-the-equator/)
 
 ![image](https://user-images.githubusercontent.com/82052220/154168572-477834d5-bb5a-45e5-9333-0153f9a1ce31.png)
-
 [Source 2](https://www.climatecentral.org/news/study-climate-change-will-threaten-wine-production-15857)
