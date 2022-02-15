@@ -1,9 +1,9 @@
 # Thesis project - Major Studio 2 
 
 ### Current "pain points"
-- Better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
-- Geographical lens - which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
-- Depending on data constraints, need to decide if I limit the spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
+- Is it better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
+- Which geographical lens to pick? Which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
+- Level of geographical coverage of a given dataset - depending on data constraints, need to decide if I limit the spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
 
 ## Problem statement
 
