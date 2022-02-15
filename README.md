@@ -28,7 +28,8 @@ I plan to examine the relationship between wine production patterns and climate 
 - Industry-level practitioners involved in: 
 1. Climate Change Adaptation/Climate-Smart Agriculture Policy (especially wine industry)
 2. Parametric Insurance & Weather Forecasting
-3. Trade, Logistics & Supply Chain
+3. Land Administration & Cadaster (in rural zones)
+4. Trade, Logistics & Supply Chain
 - Wine Geeks as well as Food + Travel Enthusiasts
 
 ## References (qualitative)
