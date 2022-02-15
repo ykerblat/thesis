@@ -1,32 +1,34 @@
 # Thesis project - Major Studio 2 
 
-### Pending pain points
-- Forward-looking lens (i.e. "in what direction are we going in?") or do we put forward a data-driven narrative based on historical records and current trends?
-- Geographical lens (what scale to use to produce this evidence?)
-- Depending on data constraints, maybe will need to limit spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
-
+### Current "pain points"
+- Better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
+- Geographical lens - which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
+- Depending on data constraints, need to decide if I limit the spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
 
 ## Problem statement
 
+I plan to examine the relationship between wine production patterns and climate change effects (current + expected) at a global level.One of the objectives would be to help the audience better understand which wine varieties (or wine-producing areas) are more likely to be resilient to climate shocks in the future.
+
+## Outline (pending)
 
 
 
-## Outline
-
-
-
-## Key questions & data points to probe
+## Key questions & datasets to probe
 
 1. Data on climate change trends & forecast
 2. Data on wine production zones/export flows
 
+1) GL-DAS reanalysis data
+2) Wine regions dataset (global - to show where wine is grown). 
+3) Dedicated over time grape stock in hectares and yield
+
+* For the wine regions points, I could extract the average value for certain growth metrics from 1980 - 2020 (for example). 
 
 ## Target audience
 - Industry-level practitioners involved in: 
 1. Climate Change Adaptation/Climate-Smart Agriculture Policy (especially wine industry)
 2. Parametric Insurance & Weather Forecasting
 3. Trade, Logistics & Supply Chain
-
 - Wine Geeks as well as Food + Travel Enthusiasts
 
 ## References (qualitative)
@@ -45,4 +47,8 @@
 - Schultz, H. R., &amp; Jones, G. V. (2010). Climate induced historic and future changes in viticulture. Journal of Wine Research, 21(2-3), 137–145. https://doi.org/10.1080/09571264.2010.530098 
 - van Leeuwen, C., &amp; Darriet, P. (2016). The impact of climate change on viticulture and Wine Quality. Journal of Wine Economics, 11(1), 150–167. https://doi.org/10.1017/jwe.2015.21 
 
+
 ## Design features (ideas)
+1. Timeline slider to show long term patterns & geographical spread
+2. Mapping forecast/trends to blend climate risks with vulnerable wine regions
+3. Filter to contrast old world vs. new world (or expensive vs. affordable wines)
