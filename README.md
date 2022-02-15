@@ -49,7 +49,13 @@ I plan to examine the relationship between wine production patterns and climate 
 - van Leeuwen, C., &amp; Darriet, P. (2016). The impact of climate change on viticulture and Wine Quality. Journal of Wine Economics, 11(1), 150–167. https://doi.org/10.1017/jwe.2015.21 
 
 
-## Design features (ideas)
+## UI design features (ideas)
 1. Timeline slider to show long term patterns & geographical spread
 2. Mapping forecast/trends to blend climate risks with vulnerable wine regions
 3. Filter to contrast old world vs. new world (or expensive vs. affordable wines)
+
+## Noteworthy spatial/temporal visuals (ideas)
+
+<img width="1266" alt="Screen Shot 2022-02-10 at 13 20 05" src="https://user-images.githubusercontent.com/82052220/154162241-747658d7-b54b-4269-844a-61025be44ae4.png">
+**Source**: [Economist article](https://www.economist.com/graphic-detail/2019/11/22/climate-change-is-forcing-winemakers-to-move-further-from-the-equator)
+
