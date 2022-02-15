@@ -1,17 +1,28 @@
-# Thesis project
+# Thesis project - Major Studio 2 
 
 
 
 ## Problem statement
 
 
+
+
 ## Outline (as of Feb 15)
 
-## Key questions & data ingredients
+
+
+## Key questions & data points
+
+
 
 
 ## Target audience
+- Industry-level practitioners involved in: 
+1. Climate Change Adaptation/Climate-Smart Agriculture Policy (especially wine industry)
+2. Parametric Insurance & Weather Forecasting
+3. Trade, Logistics & Supply Chain
 
+- Wine Geeks as well as Food + Travel Enthusiasts
 
 ## References (qualitative)
 
