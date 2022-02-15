@@ -13,7 +13,7 @@ I plan to examine the relationship between wine production patterns and climate 
 
 
 
-## Key questions & datasets to probe
+## Key questions & datasets ideas to probe/explore
 
 1. Data on climate change trends & forecast
 2. Data on wine production zones/export flows
