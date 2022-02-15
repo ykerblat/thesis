@@ -1,5 +1,7 @@
 # Thesis project - Major Studio 2 
 
+Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
+
 ### Current "pain points"
 - Is it better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
 - Which geographical lens to pick? Which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
@@ -59,6 +61,4 @@ I plan to examine the relationship between wine production patterns and climate 
 <img width="1266" alt="Screen Shot 2022-02-10 at 13 20 05" src="https://user-images.githubusercontent.com/82052220/154162241-747658d7-b54b-4269-844a-61025be44ae4.png">
 
 [Source](https://www.economist.com/graphic-detail/2019/11/22/climate-change-is-forcing-winemakers-to-move-further-from-the-equator/)
-
-This site was built using [GitHub Pages](https://pages.github.com/).
 
