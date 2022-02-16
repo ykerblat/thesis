@@ -2,7 +2,7 @@
 
 Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
 
-### Current "pain points"
+### **Current "pain points**"
 - Is it better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
 - Which geographical lens to pick? Which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
 - Level of geographical coverage of a given dataset - depending on data constraints, need to decide if I limit the spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
