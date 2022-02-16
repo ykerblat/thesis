@@ -15,16 +15,16 @@ I plan to examine the relationship between wine production patterns and climate 
 
 
 
-## Key questions & datasets ideas to probe/explore
+## Key questions & datasets ideas to probe/explore (pending)
 
-1. Data on climate change trends & forecast
-2. Data on wine production zones/export flows
+- Data on climate change trends & forecast
+- Data on wine production zones/export flows
 
-1) GL-DAS reanalysis data
-2) Wine regions dataset (global - to show where wine is grown). 
-3) Dedicated over time grape stock in hectares and yield
+1) Check out GL-DAS reanalysis data
+2) Locate wine regions dataset (global - to show where wine is grown). 
+3) Analyze dedicated over time grape stock in hectares and yield
 
-* For the wine regions points, I could extract the average value for certain growth metrics from 1980 - 2020 (for example). 
+* For the wine regions points, I could try to extract the average value for certain growth metrics from 1980 - 2020 (for example)?
 
 ## Target audience
 - Industry-level practitioners involved in: 
