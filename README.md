@@ -19,10 +19,12 @@ Some questions I'm interested in exploring:
 - Provide an overview of the analytical challenges with this topic and explain why I want to start explore this topic at a more macro level.
 - Provide an overview of the data sources and what the reader can expect to learn in terms of insights in this project.
 
-#### Section 1 - Spatial overview: "which wines/wine-producing regions are the most exposed to climate change? Are there any strong characteristics of these wines/wine-producing regions?"
+#### Section 1 - Spatial overview
+Which wines/wine-producing regions are the most exposed to climate change? Are there any strong characteristics of these wines/wine-producing regions?
 
 
-#### Section 2 - Temporal dimension: "how climate change shifts harvest calendars and what are the implications for regions that rely on wine productions?"
+#### Section 2 - Temporal dimension
+How climate change shifts harvest calendars and what are the implications for regions that rely on wine productions?"
 
 
 #### Section 3 - Emerging practices: "what are the most promising techniques/innovations that highly-exposed regions piloting/scaling up?
@@ -32,16 +34,14 @@ Some questions I'm interested in exploring:
 Summary of research findings/analysis and shed some light on these growing practices (what's are the trends and patterns that we can observe?
 
 
-## Key questions & datasets ideas to probe/explore (pending)
+## Datasets ideas to probe/explore (pending)
 
-- Data on climate change trends & forecast
-- Data on wine production zones/export flows
-
-1) Check out GL-DAS reanalysis data
-2) Locate wine regions dataset (global - to show where wine is grown). 
-3) Analyze dedicated over time grape stock in hectares and yield
-
-* For the wine regions points, I could try to extract the average value for certain growth metrics from 1980 - 2020 (for example)?
+- Identify dataset on climate change trends & forecast?
+- Identify dataset on wine production zones?
+- Check out GL-DAS reanalysis data (land use cover)?
+- Locate wine regions dataset (global - to show where wine is grown)?
+- Analyze dedicated overtime grape stock in hectares and yield?
+- For wine regions points, I could try to extract the average value for certain growth metrics from 1980 - 2020 (for example)?
 
 ## Target audience
 - Industry-level practitioners involved in: 
