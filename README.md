@@ -2,32 +2,36 @@
 
 Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
 
-### *Current "pain points*"
-- Is it better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
-- Which geographical lens to pick? Which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
-- Level of geographical coverage of a given dataset - depending on data constraints, need to decide if I limit the spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
-
 ## Problem statement
 
 I plan to examine the relationship between wine production patterns and climate change effects (current + expected) at a global level.One of the objectives would be to help the audience better understand which wine varieties (or wine-producing areas) are more likely to be resilient to climate shocks in the future.
 
 Some questions I'm interested in exploring:
-1. s
-2. 2
-3. 2
+1. Which are the wines that are the most exposed to climate change?
+2. What's the profile of a typical wine that is at risk from global warning? (Are there any visible geographical/socio-economic/environment features of these at-risk wines)
+3. Is there a clear correlation between grape type and level of climate risk? 
+4. What are the most promising techniques and emerging techniques that exist that can help wine producers adapt to this new reality?
 
 ## Outline (pending)
 
 #### Introduction
-- Explain what's specific and interesting to the relationship between wine production & climate change (or global warming)
-- Provide an overview of the analytical challenges with this topic and explain why I want to start explore this topic at a more macro level
-- Provide an overview of the data sources and what the audience can expect to learn in terms of insights
+- Provide short context for reading and explain what's specific and interesting to the relationship between wine production & climate change/global warming.
+- Provide an overview of the analytical challenges with this topic and explain why I want to start explore this topic at a more macro level.
+- Provide an overview of the data sources and what the reader can expect to learn in terms of insights in this project.
 
-#### Section 1 - Spatial overview #### (
+#### Section 1 - Spatial overview: "which wines/wine-producing regions are the most exposed to climate change? Are there any strong characteristics of these wines/wine-producing regions?"
 
-#### Section 2 - Temporal dimension #### ("How climate change shifts harvest calendar and what are the implications for regions producing wine?")
 
-#### Section 3 - 
+
+#### Section 2 - Temporal dimension: "how climate change shifts harvest calendars and what are the implications for regions that rely on wine productions?"
+
+
+
+#### Section 3 - Emerging practices: "what are the most promising techniques/innovations that highly-exposed regions piloting/scaling up?
+
+
+#### Conclusion
+Summary of research findings/analysis and shed some light on these growing practices (what's are the trends and patterns that we can observe?
 
 
 ## Key questions & datasets ideas to probe/explore (pending)
@@ -80,3 +84,8 @@ Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wi
 
 ![image](https://user-images.githubusercontent.com/82052220/154168572-477834d5-bb5a-45e5-9333-0153f9a1ce31.png) <br>
 [Source](https://www.climatecentral.org/news/study-climate-change-will-threaten-wine-production-15857)
+
+### *Current "pain points*"
+- Is it better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
+- Which geographical lens to pick? Which scale to use to produce this evidence? Need to decide how to handle all the various scales of impact (viticulture is both large and small scale..!).
+- Level of geographical coverage of a given dataset - depending on data constraints, need to decide if I limit the spatial analysis to a specific region/set of wine-producing regions (the "Old World" for example)?
