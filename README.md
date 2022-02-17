@@ -18,16 +18,16 @@ Some questions I'm interested in exploring:
 
 ## Outline (pending)
 
-### Introduction
+#### Introduction
 - Explain what's specific and interesting to the relationship between wine production & climate change (or global warming)
 - Provide an overview of the analytical challenges with this topic and explain why I want to start explore this topic at a more macro level
 - Provide an overview of the data sources and what the audience can expect to learn in terms of insights
 
-### Section 1 - Spatial overview (
+#### Section 1 - Spatial overview (
 
-### Section 2 - Temporal dimension ("How climate change shifts harvest calendar and what are the implications for regions producing wine?")
+#### Section 2 - Temporal dimension ("How climate change shifts harvest calendar and what are the implications for regions producing wine?")
 
-### Section 3 - 
+#### Section 3 - 
 
 
 ## Key questions & datasets ideas to probe/explore (pending)
