@@ -23,9 +23,9 @@ Some questions I'm interested in exploring:
 - Provide an overview of the analytical challenges with this topic and explain why I want to start explore this topic at a more macro level
 - Provide an overview of the data sources and what the audience can expect to learn in terms of insights
 
-#### Section 1 - Spatial overview (
+#### Section 1 - Spatial overview #### (
 
-#### Section 2 - Temporal dimension ("How climate change shifts harvest calendar and what are the implications for regions producing wine?")
+#### Section 2 - Temporal dimension #### ("How climate change shifts harvest calendar and what are the implications for regions producing wine?")
 
 #### Section 3 - 
 
