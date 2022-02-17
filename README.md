@@ -13,7 +13,11 @@ I plan to examine the relationship between wine production patterns and climate 
 
 ## Outline (pending)
 
+Section 1
 
+Section 2
+
+Section 3
 
 ## Key questions & datasets ideas to probe/explore (pending)
 
