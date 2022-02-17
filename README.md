@@ -12,7 +12,7 @@ Some questions I'm interested in exploring:
 3. Is there a clear correlation between grape type and level of climate risk? 
 4. What are the most promising techniques and emerging techniques that exist that can help wine producers adapt to this new reality?
 
-## Outline (pending)
+## Outline (as of Feb 15)
 
 #### Introduction
 - Provide short context for reading and explain what's specific and interesting to the relationship between wine production & climate change/global warming.
