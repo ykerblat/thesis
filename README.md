@@ -25,16 +25,16 @@ Some questions I'm interested in exploring:
 - Provide an overview of the analytical challenges with this topic and explain why I want to start explore this topic at a more macro level.
 - Provide an overview of the data sources and what the reader can expect to learn in terms of insights in this project.
 
-#### Section 1 - Spatial overview
+#### Section 1 - Spatial overview at global level
 Which wines/wine-producing regions are the most exposed to climate change? Are there any strong characteristics of these wines/wine-producing regions?
 
 
-#### Section 2 - Temporal dimension
+#### Section 2 - Temporal dimension at regional level
 How climate change shifts harvest calendars and what are the implications for regions that rely on wine productions?"
 
 
-#### Section 3 - Emerging practices: "what are the most promising techniques/innovations that highly-exposed regions piloting/scaling up?
-
+#### Section 3 - Emerging practices and innovations at local level
+What are the most promising techniques/innovations that highly-exposed regions piloting/scaling up?
 
 #### Conclusion
 Summary of research findings/analysis and shed some light on these growing practices (what's are the trends and patterns that we can observe?
