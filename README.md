@@ -84,7 +84,7 @@ Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wi
 [Source](https://www.climatecentral.org/news/study-climate-change-will-threaten-wine-production-15857)
 
 ![image](https://user-images.githubusercontent.com/82052220/154543731-44f0bb39-a4aa-4916-a411-b2fa61e4307e.png)
-[Source] (https://winefolly.com/tips/start-planning-now-wine-harvest-season/)
+[Source](https://winefolly.com/tips/start-planning-now-wine-harvest-season/)
 
 
 ### *Current "pain points*"
