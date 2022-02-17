@@ -22,9 +22,7 @@ Some questions I'm interested in exploring:
 #### Section 1 - Spatial overview: "which wines/wine-producing regions are the most exposed to climate change? Are there any strong characteristics of these wines/wine-producing regions?"
 
 
-
 #### Section 2 - Temporal dimension: "how climate change shifts harvest calendars and what are the implications for regions that rely on wine productions?"
-
 
 
 #### Section 3 - Emerging practices: "what are the most promising techniques/innovations that highly-exposed regions piloting/scaling up?
@@ -84,6 +82,9 @@ Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wi
 
 ![image](https://user-images.githubusercontent.com/82052220/154168572-477834d5-bb5a-45e5-9333-0153f9a1ce31.png) <br>
 [Source](https://www.climatecentral.org/news/study-climate-change-will-threaten-wine-production-15857)
+
+![image](https://user-images.githubusercontent.com/82052220/154543731-44f0bb39-a4aa-4916-a411-b2fa61e4307e.png)
+
 
 ### *Current "pain points*"
 - Is it better to articulate a forward-looking lens (i.e. "in what direction are we going in?") or put forward a data-driven narrative based on _historical_ records and/or current trends?
