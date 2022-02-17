@@ -11,6 +11,11 @@ Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711
 
 I plan to examine the relationship between wine production patterns and climate change effects (current + expected) at a global level.One of the objectives would be to help the audience better understand which wine varieties (or wine-producing areas) are more likely to be resilient to climate shocks in the future.
 
+Some questions I'm interested in exploring:
+1. s
+2. 2
+3. 2
+
 ## Outline (pending)
 
 Section 1
