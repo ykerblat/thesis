@@ -89,3 +89,12 @@ Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wi
 
 ![image](https://user-images.githubusercontent.com/82052220/154543731-44f0bb39-a4aa-4916-a411-b2fa61e4307e.png)
 [Source](https://winefolly.com/tips/start-planning-now-wine-harvest-season/)
+
+![image](https://user-images.githubusercontent.com/82052220/154576190-0069fca8-e274-44aa-8859-668ae4a7963f.png)
+[Source](https://oeno-one.eu/article/view/1184)
+
+![image](https://user-images.githubusercontent.com/82052220/154576246-68196f2b-34ff-4e27-abdc-fdb4560370db.png)
+[Source](https://oeno-one.eu/article/view/1184)
+
+
+
