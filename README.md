@@ -96,5 +96,6 @@ Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wi
 ![image](https://user-images.githubusercontent.com/82052220/154576246-68196f2b-34ff-4e27-abdc-fdb4560370db.png)
 [Source](https://oeno-one.eu/article/view/1184)
 
+[Wireframe - MS2 project.pdf](https://github.com/ykerblat/thesis/files/8134754/Wireframe.-.MS2.project.pdf)
 
 
