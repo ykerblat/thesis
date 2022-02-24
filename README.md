@@ -1,4 +1,4 @@
-# Thesis | Major Studio 2 (uncer construction)
+# Thesis | Major Studio 2 (under construction)
 
 Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
 
