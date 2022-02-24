@@ -2,6 +2,9 @@
 
 Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
 
+[Wireframe - MS2 project.pdf](https://github.com/ykerblat/thesis/files/8134766/Wireframe.-.MS2.project.pdf)
+
+
 ## Problem statement
 
 I plan to examine the relationship between wine production patterns and climate change effects (current + expected) at a global level.One of the objectives would be to help the audience better understand which wine varieties (or wine-producing areas) are more likely to be resilient to climate shocks in the future.
@@ -95,7 +98,4 @@ Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wi
 
 ![image](https://user-images.githubusercontent.com/82052220/154576246-68196f2b-34ff-4e27-abdc-fdb4560370db.png)
 [Source](https://oeno-one.eu/article/view/1184)
-
-[Wireframe - MS2 project.pdf](https://github.com/ykerblat/thesis/files/8134754/Wireframe.-.MS2.project.pdf)
-
 
