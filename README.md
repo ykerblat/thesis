@@ -1,4 +1,4 @@
-# Thesis project - Major Studio 2 
+# Thesis | Major Studio 2 (uncer construction)
 
 Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
 
@@ -8,7 +8,7 @@ I plan to examine the relationship between wine production patterns and climate 
 
 Some questions I'm interested in exploring:
 1. Which are the wines that are the most exposed to climate change?
-2. What's the profile of a typical wine that is at risk from global warning? (Are there any visible geographical/socio-economic/environment features of these at-risk wines)
+2. What's the profile of a typical wine that is at risk from global warming? (Are there any visible geographical/socio-economic/environment features of these at-risk wines)
 3. Is there a clear correlation between grape type and level of climate risk? 
 4. What are the most promising techniques and emerging techniques that exist that can help wine producers adapt to this new reality?
 
