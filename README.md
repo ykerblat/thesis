@@ -4,9 +4,9 @@
 
 Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711/8729f87315827873d1ddd7c7095f14b6f8b6609e?sender=u6b4a2907c260aa3728a02010)
 
-[Wireframe - MS2 project.pdf] (as of March 1) (https://github.com/ykerblat/thesis/files/8134766/Wireframe.-.MS2.project.pdf)
+[Wireframe as of March 1](https://github.com/ykerblat/thesis/files/8134766/Wireframe.-.MS2.project.pdf)
 
-Current wireframe link (as of March 8) - https://xd.adobe.com/view/dd79b8a7-51c0-437b-afe1-0aad26b45b60-882a/
+[Current XD wireframe link as of March 8](https://xd.adobe.com/view/dd79b8a7-51c0-437b-afe1-0aad26b45b60-882a/)
 
 
 ## Problem statement
