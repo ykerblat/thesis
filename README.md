@@ -76,8 +76,6 @@ Summary of research findings/analysis and shed some light on these growing pract
 - Morales-Castilla, I., García de Cortázar-Atauri, I., Cook, B. I., Lacombe, T., Parker, A., van Leeuwen, C., Nicholas, K. A., & Wolkovich, E. M. (2020). Diversity buffers winegrowing regions from climate change losses. Proceedings of the National Academy of Sciences, 117(6), 2864–2869. https://doi.org/10.1073/pnas.1906731117 
 - Moriondo, M., Jones, G. V., Bois, B., Dibari, C., Ferrise, R., Trombi, G., & Bindi, M. (2013). Projected shifts of wine regions in response to climate change. Climatic Change, 119(3-4), 825–839. https://doi.org/10.1007/s10584-013-0739-y 
 Mozell, M. R., & Thach, L. (2014). The impact of climate change on the Global Wine Industry: Challenges and Solutions. Wine Economics and Policy, 3(2), 81–89. https://doi.org/10.1016/j.wep.2014.08.001 
-- Schultz, H. R. (2010). Climate change and viticulture: Research needs for facing the future. Journal of Wine Research, 21(2-3), 113–116. https://doi.org/10.1080/09571264.2010.530093 
-- Schultz, H. R., & Jones, G. V. (2010). Climate induced historic and future changes in viticulture. Journal of Wine Research, 21(2-3), 137–145. https://doi.org/10.1080/09571264.2010.530098 
 - van Leeuwen, C., & Darriet, P. (2016). The impact of climate change on viticulture and Wine Quality. Journal of Wine Economics, 11(1), 150–167. https://doi.org/10.1017/jwe.2015.21 
 
 
