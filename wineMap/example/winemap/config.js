@@ -157,10 +157,10 @@ var config = {
             image: '',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
             location: {
-                center: [-1.04561, 45.20118],
-                zoom: 9.17,
-                pitch: 60.00,
-                bearing: 20.79
+                center: [-0.90165, 45.35693],
+                zoom: 8.68,
+                pitch: 59.5,
+                bearing: 20.80
             },
             onChapterEnter: [
                 {
@@ -182,14 +182,14 @@ var config = {
         {
             id: 'CH3-1_CaliforniaNationalJob',
             alignment: 'right',
-            title: 'Frost events in Bordeaux',
+            title: 'The economic contribution of the California wine industry',
             image: '',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
             location: {
-                center: [-0.57650, 44.91907],
-                zoom: 10.46,
-                pitch: 60.50,
-                bearing: -33.60
+                center: [-82.73387, 38.03087],
+                zoom: 3.64,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [
                 {
@@ -209,16 +209,16 @@ var config = {
             ]
         },
         {
-            id: 'CH3-3_CaliforniaWineExpansion',
+            id: 'CH3-2_CaliforniaExpansion',
             alignment: 'right',
-            title: 'Frost events in Bordeaux',
+            title: 'The Wine Industry in California',
             image: '',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
             location: {
-                center: [-0.57650, 44.91907],
-                zoom: 10.46,
-                pitch: 60.50,
-                bearing: -33.60
+                center: [-114.16436, 37.02186],
+                zoom: 5.39,
+                pitch: 48.00,
+                bearing: -4.00
             },
             onChapterEnter: [
                 {
@@ -238,16 +238,16 @@ var config = {
             ]
         },
         {
-            id: 'CH3-3_CaliforniaWildFiresOverPreviousYears',
+            id: 'CH3-3_CaliforniaWildFires',
             alignment: 'right',
             title: 'Frost events in Bordeaux',
             image: '',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
             location: {
-                center: [-0.57650, 44.91907],
-                zoom: 10.46,
-                pitch: 60.50,
-                bearing: -33.60
+                center: [-117.78644, 37.52731],
+                zoom: 5.82,
+                pitch: 0.00,
+                bearing: -2.40
             },
             onChapterEnter: [
                 {
