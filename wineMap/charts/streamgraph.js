@@ -3,10 +3,10 @@
 /*global d3*/
 
 // set the dimensions and margins of the graph
-var margin = {top: 20, right: 30, bottom: 0, left: 50},
+var margin = {top: 10, right: 30, bottom: 0, left: 500},
     // width = 1000 - margin.left - margin.right,
     width = 1000,
-    height = 1500;
+    height = 600;
 
 // append the svg object to the body of the page
 var svg = d3.select("#streamgraph")
@@ -59,9 +59,13 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
   //   .domain(keys)
   //   .range(d3.schemeDark2);
 
+  // var color = d3.scaleOrdinal()
+  //   .domain(keys)
+  //   .range(d3.schemeSet1);
+    
   var color = d3.scaleOrdinal()
-    .domain(keys)
-    .range(d3.schemeSet1);
+  .domain(keys)
+  .range(["#9E0142", "#DB494A", "#F88E53", "#FED281", "#FBF8B0", "#D5EE9F", "#89CFA5", "#4696B3", "#4E4381", "orange"])
 
 
   //stack the data?
@@ -83,7 +87,7 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
     Tooltip.style("opacity", 1)
     d3.selectAll(".myArea").style("opacity", 0.2)
     d3.select(this)
-      .style("stroke", "yellow")
+      .style("stroke", "red")
       .style("opacity", 1)
   }
   var mousemove = function(d,i) {
@@ -100,6 +104,7 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
     .x(function(d) { return x(d.data.year); })
     .y0(function(d) { return y(d[0]); })
     .y1(function(d) { return y(d[1]); })
+    .curve(d3.curveMonotoneX);
 
   // Show the areas
   svg
