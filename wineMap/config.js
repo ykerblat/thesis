@@ -312,17 +312,13 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'whiteWine',
-                    opacity: 1,
-                    layer: 'redWine',
+                    layer: 'CA_fire',
                     opacity: 1
                 }
             ],
             onChapterExit: [
                                 {
-                    layer: 'whiteWine',
-                    opacity: 0,
-                    layer: 'redWine',
+                    layer: 'CA_fire',
                     opacity: 0
                 }
             ]
