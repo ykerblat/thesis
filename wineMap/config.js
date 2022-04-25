@@ -129,19 +129,21 @@ var config = {
             alignment: 'left',
             title: 'A close look at the wine industry in France',
             image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
+            description: 'A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br><iframe title="Wine consumption in France 2015-2020, by region" aria-label="Split Bars" id="datawrapper-chart-Spd9I" src="https://datawrapper.dwcdn.net/Spd9I/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="428"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();',
             location: {
-                center: [-1.44375, 46.95256],
-                zoom: 5.46,
-                pitch: 0.0,
-                bearing: 0.0
+                center: [-0.57058, 45.88270],
+                zoom: 6.00,
+                pitch: 48.50,
+                bearing: 1.60
             },
             onChapterEnter: [
                 {
-                    layer: 'whiteWine',
+                    layer: 'France_AOC_highZoom',
                     opacity: 1,
-                    layer: 'redWine',
-                    opacity: 1
+                },
+                {
+                    layer: 'France_geojson',
+                    opacity: 0.1,
                 }
             ],
             onChapterExit: [
@@ -245,7 +247,7 @@ var config = {
             alignment: 'right',
             title: 'The economic contribution of the California wine industry',
             image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id. <br></br><iframe title="Bottled wine production volume in the U.S. 2019 (by State)" aria-label="Map" id="datawrapper-chart-fgS1S" src="https://datawrapper.dwcdn.net/fgS1S/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();',
             location: {
                 center: [-82.73387, 38.03087],
                 zoom: 3.64,
@@ -255,16 +257,12 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'whiteWine',
-                    opacity: 1,
-                    layer: 'redWine',
-                    opacity: 1
+                    opacity: 0
                 }
             ],
             onChapterExit: [
                                 {
                     layer: 'whiteWine',
-                    opacity: 0,
-                    layer: 'redWine',
                     opacity: 0
                 }
             ]
@@ -305,16 +303,25 @@ var config = {
             image: '',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/countourPlot.html"></iframe><br></br>',
             location: {
-                center: [-117.78644, 37.52731],
-                zoom: 5.82,
+                center: [-115.67532, 37.77697],
+                zoom: 5.83,
                 pitch: 0.00,
                 bearing: -2.40
             },
             onChapterEnter: [
                 {
                     layer: 'CA_fire',
-                    opacity: 1
-                }
+                    opacity: 0.8,
+                    
+                },
+                                 {
+                     layer: 'vineyard_light',
+                     opacity: 1,
+                 },
+                                                  {
+                     layer: 'CA_boundary',
+                     opacity: 0.3,
+                 },
             ],
             onChapterExit: [
                                 {
