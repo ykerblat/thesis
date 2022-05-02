@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Gauge with Color Ranges</title>
+  <link href="https://playground.anychart.com/gallery/src/Circular_Gauges/Gauge_with_Color_Ranges/iframe" rel="canonical">
+  <meta content="Circular Gauge,Gauges" name="keywords">
+  <meta content="AnyChart - JavaScript Charts designed to be embedded and integrated" name="description">
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" rel="stylesheet" type="text/css">
+  <style>
+
+
+html,body,
+#container {
+  width: 105%;
+  height: 105%;
+  margin: 0;
+  padding: 0;
+  /*left: -50px;*/
+  background-color:#ECE5D9;
+}
+
+
+</style>
+ </head>
+ <body>
+  <div id="container"></div>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-circular-gauge.min.js"></script>
+  <script type="text/javascript">anychart.onDocumentReady(function () {
+  var gauge = anychart.gauges.circular();
+  gauge
+    .fill('#fff')
+    .stroke(null)
+    .padding(0)
+    .margin(100)
+    .startAngle(270)
+    .sweepAngle(180);
+
+  gauge
+    .axis()
+    .labels()
+    .padding(5)
+    .fontSize(14)
+    .position('outside')
+    .format('{%Value}%');
+
+  gauge.data([40]);
+  
+  gauge
+    .axis()
+    .scale()
+    .minimum(0)
+    .maximum(100)
+    .ticks({ interval: 10 })
+    .minorTicks({ interval: 5 });
+
+  gauge
+    .axis()
+    .fill('#545f69')
+    .width(1)
+    .ticks({ type: 'line', fill: 'white', length: 2 });
+
+  gauge.title(
+    '<span style="font-family: Geneva, Verdana, sans-serif;"> Proportion of wine harvest impacted by the <span style="color:#e71845;"><strong>April 2017 </strong></span>frost damage in Bordeaux Area');
+    
+  gauge
+    .title()
+    .useHtml(true)
+    .padding(0)
+    .fontColor('#212121')
+    .hAlign('center')
+    .margin([0, 0, 10, 0]);
+
+  gauge
+    .needle()
+    .stroke('2.5 #545f69')
+    .startRadius('5%')
+    .endRadius('90%')
+    .startWidth('0.5%')
+    .endWidth('0.1%')
+    .middleWidth('0.2%');
+
+  gauge.cap().radius('3%').enabled(true).fill('#545f69');
+
+
+  gauge.range(0, {
+    from: 0,
+    to: 30,
+    position: 'inside',
+    fill: '#FFFF60 0.7',
+    startSize: 50,
+    endSize: 50,
+    radius: 98
+  });
+  
+  gauge.range(1, {
+    from: 30,
+    to: 50,
+    position: 'inside',
+    fill: '#FDC244 0.7',
+    startSize: 50,
+    endSize: 50,
+    radius: 98
+  });
+
+  gauge.range(2, {
+    from: 50,
+    to: 80,
+    position: 'inside',
+    fill: '#FF894C 0.7',
+    startSize: 50,
+    endSize: 50,
+    radius: 98
+  });
+
+  gauge.range(3, {
+    from: 80,
+    to: 100,
+    position: 'inside',
+    fill: '#EC4D4D 0.7',
+    startSize: 50,
+    endSize: 50,
+    radius: 98
+  });
+
+  gauge
+    .label(1)
+    .text('Minor')
+    .fontColor('#212121')
+    .fontSize(14)
+    .offsetY('68%')
+    .offsetX(20)
+    .anchor('center');
+
+  gauge
+    .label(2)
+    .text('Concerning')
+    .fontColor('#212121')
+    .fontSize(14)
+    .offsetY('75%')
+    .offsetX(70)
+    .anchor('center');
+
+  gauge
+    .label(3)
+    .text('Significant')
+    .fontColor('#212121')
+    .fontSize(14)
+    .offsetY('75%')
+    .offsetX(120)
+    .anchor('center');
+    
+  gauge
+    .label(4)
+    .text('Catastrophic')
+    .fontColor('#212121')
+    .fontSize(14)
+    .offsetY('75%')
+    .offsetX(165)
+    .anchor('center');
+
+    var background = gauge.background();
+    background.fill(['#ECE5D9']);
+    
+  gauge.container('container');
+  gauge.draw();
+});
+
+
+</script>
+ </body>
+</html>

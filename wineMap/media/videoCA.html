@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+  
+/*  .videoWrapper {*/
+/*  position: relative;*/
+/*  padding-bottom: 56.25%;*/
+  /* 16:9 */
+/*  padding-top: 25px;*/
+/*  height: 0;*/
+/*}*/
+
+/*.videoWrapper iframe {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*}*/
+
+body {
+  font-family: sans-serif;
+}
+
+.videoWrapper {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+  pointer-events: none;
+}
+.videoWrapper iframe {
+  /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
+}
+
+    </style>
+  </head>
+  
+<body>
+
+
+<!--<video width="320" height="240" controls autoplay>-->
+<!--  <source src="grapesVid.mp4" type="video/mp4">-->
+  <!--<source src="movie.ogg" type="video/ogg">-->
+<!--  Your browser does not support the video tag.-->
+<!--</video>-->
+
+<div class="videoWrapper">
+
+<!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QOLH1mlorp0?autoplay=1&mute=1&loop=1&controls=0">-->
+<!--<iframe width="50%" height="50%" src="https://www.youtube.com/embed/QOLH1mlorp0?autoplay=1&mute=1&loop=1&controls=0&color=white&controls=0&modestbranding=1&playsinline=1&rel=0"></iframe>-->
+
+<iframe width="50%" height="50%" src="https://www.youtube.com/embed/BTdSjXmc-lw?autoplay=1&mute=1&loop=1&controls=0&color=white&controls=0&modestbranding=1&playsinline=1&rel=0"></iframe>
+
+
+
+<!--<iframe src="https://www.youtube.com/embed/WhY7uyc56ms?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=WhY7uyc56ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+ 
+  <!--https://youtube.com/shorts/nH3THEuaTYw?feature=share-->
+ 
+</div>
+
+
+</body>
+</html>

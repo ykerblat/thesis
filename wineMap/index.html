@@ -3,13 +3,19 @@
 
 <head>
     <meta charset='utf-8' />
-    <title>Wine & Climate App</title>
+    <title>Wine & Climate Change Nexus</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <script ='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
+    
+    <!--Added these new scripts to resolve recent issue - https://stackoverflow.com/questions/69976892/mapbox-uncaught-referenceerror-mapboxgl-is-not-defined -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    
     <style>
+        
         body {
             margin: 0;
             padding: 0;
@@ -23,29 +29,61 @@
         }
 
         #map {
-            /*top: 50;*/
+            top: 50;
             height: 100vh;
             width: 100vw;
             position: fixed;
         }
 
-        #header {
+        #globalWine{
+            margin: auto;
+            width:  50vw;
+            height: 50vh;
+            position: relative;
+            color:white;
+            transition: transform .5s;
+            /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1592758091373-bcec0e646d4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3474&q=80");*/
+            /*background-position: center;*/
+            /*background-repeat: no-repeat;*/
+            /*background-size: cover;*/
+    }
+    
+    #stream {
+            margin: auto;
+            width:  100vw;
+            height: 50vh;
+            position: relative;
+            color:white;
+            transition: transform .5s;
+    }
+    
+    #bubble{
+            margin: auto;
+            width: 100vw;
+            height: 100vh;
+            /*opacity: 0;*/
+    }
+       #bubble{
+            margin: auto;
+            width: 100vw;
+            height: 100vh;
+            /*opacity: 0;*/
+    }
+    
+    #header {
             margin: auto;
             width: 100vw;
             height: 100vh;
             position: relative;
             color:white;
-            transition: transform .5s; /* Animation */
-            /*z-index: 5;*/
-            background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1592758091373-bcec0e646d4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3474&q=80");
+            transition: transform .5s;
+            z-index: 5;
+            background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1592758091373-bcec0e646d4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3474&q=80");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         
-        #header:hover {
-             transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
-
         #header h1,
         #header h2,
         #header p {
@@ -56,7 +94,14 @@
 
         #header h1 {
             padding-top:25%;
+            color:#b11226;
+            font-size:96px;
+  /*background-image: -linear-gradient(270deg, #85A051, #b11226);*/
+  /*  background-image: linear-gradient(270deg, #8ac926, #c1121f);*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
         }
+        
         #footer {
             width: 100%;
             min-height: 5vh;
@@ -73,47 +118,11 @@
             padding-top: 10vh;
             padding-bottom: 10vh;
         }
-        
 
-        /*#hero {*/
-            /*z-index: 10;*/
-        /*    height:100vh;*/
-        /*    position:relative;*/
-        /*}*/
-
-        /*.hero-image {*/
-        /*    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://unsplash.com/photos/TYq2e31Whis");*/
-        /*    height: 50%;*/
-        /*    background-position: center;*/
-        /*    background-repeat: no-repeat;*/
-        /*    background-size: cover;*/
-        /*    position: relative;*/
-        /*}*/
-
-        /*.hero-text {*/
-        /*    text-align: center;*/
-        /*    position: absolute;*/
-        /*    top: 50%;*/
-        /*    left: 50%;*/
-        /*    transform: translate(-50%, -50%);*/
-        /*    color: white;*/
-        /*}*/
-
-        /*.hero-text button {*/
-        /*    border: none;*/
-        /*    outline: 0;*/
-        /*    display: inline-block;*/
-        /*    padding: 10px 25px;*/
-        /*    color: black;*/
-        /*    background-color: #ddd;*/
-        /*    text-align: center;*/
-        /*    cursor: pointer;*/
-        /*}*/
-
-        /*.hero-text button:hover {*/
-        /*    background-color: #555;*/
-        /*    color: white;*/
-        /*}*/
+        #shiftB{
+                width: 100vw;
+                height: 100vh;
+        }
 
         .hidden {
             visibility: hidden;
@@ -148,18 +157,19 @@
             /*color: #fafafa;*/
             color: #444;
             background-color: #ECE5D9;
+            opacity:1;
             /*background-color: #444;*/
         }
 
         .step {
             padding-top: 10vh;
-            padding-bottom: 50vh;
-            /* margin-bottom: 10vh; */
-            opacity: 0.25;
+            padding-bottom: 60vh;
+             margin-bottom: 10vh; 
+            opacity: 0.7;
         }
 
         .step.active {
-            opacity: 0.9;
+            opacity: 0.99;
         }
 
         .step div {
@@ -269,7 +279,7 @@
             var chapter = document.createElement('div');
 
             if (record.title) {
-                var title = document.createElement('h3');
+                var title = document.createElement('h2');
                 title.innerText = record.title;
                 chapter.appendChild(title);
             }
@@ -411,6 +421,7 @@
                     }
                 });
         });
+        
 
         // setup resize event
         window.addEventListener('resize', scroller.resize);
