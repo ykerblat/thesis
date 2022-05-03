@@ -42,7 +42,7 @@ var config = {
             alignment: 'center',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             // image: 'https://images.unsplash.com/photo-1592758091373-bcec0e646d4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3474&q=80',
-            description: 'The wine industry is thriving and we have never consumed so much wine previously. <br> Today, half of the world’s wine exports come from two countries, France and Italy and 3/4 wines come from Europe but the New World has also been growing very fast. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="TEST/index2.html"></iframe>',
+            description: 'The wine industry is thriving and we have never consumed so much wine previously. <br> Today, half of the world’s wine exports come from two countries, France and Italy and 3/4 wines come from Europe but the New World has also been growing very fast. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="TEST/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -149,42 +149,72 @@ var config = {
             ],
             onChapterExit: [
                                 {
-                    layer: 'whiteWine',
+                    layer: 'France_AOC_highZoom',
                     opacity: 0,
-                    layer: 'redWine',
-                    opacity: 0
                 }
             ]
         },
          {
             id: 'CH2-2',
             alignment: 'left',
-            title: 'The Bordeaux wine region has some of the most expensive vineyard domains in the world',
+            title: 'The Bordeaux wine region has some of the most expensive vineyard domains in Europe',
             image: '',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
             location: {
-                center: [-0.57650, 44.91907],
-                zoom: 10.46,
-                pitch: 60.50,
-                bearing: -33.60
+                center: [-0.90492, 44.58133],
+                zoom: 8.30,
+                pitch: 55.00,
+                bearing: -36.80
             },
             onChapterEnter: [
                 {
-                    layer: 'whiteWine',
-                    opacity: 0,
+                    layer: 'bordeaux-pricing',
+                    opacity: 1,
+                },
+                                {
                     layer: 'redWine',
-                    opacity: 0
+                    opacity: 1,
                 }
             ],
             onChapterExit: [
                                 {
-                    layer: 'whiteWine',
-                    opacity: 0,
                     layer: 'redWine',
+                    opacity: 0
+                },
+                {
+                    layer: 'bordeaux-pricing',
+                    opacity: 0,}
+            ]
+        },
+        {
+                    id: 'shiftB',
+            alignment: 'center',
+            title: 'TRANSITION - Shifting to California',
+            // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
+            description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
+            // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
+            location: {
+                center: [-0.94343, 44.99235],
+                zoom: 9.56,
+                pitch: 60.00,
+                bearing: -26.22
+            },
+            onChapterEnter: [
+                {
+                    // layer: 'whiteWine',
+                    opacity: 0,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    // layer: 'whiteWine',
+                    opacity: 0,
+                    // layer: 'redWine',
                     opacity: 0
                 }
             ]
         },
+        
         {
             id: 'CH2-3',
             alignment: 'left',
@@ -192,10 +222,10 @@ var config = {
             image: '',
             description: 'Devastating frost has caused a 40% drop in the Bordeaux 2017 wine harvest and new estimates show the financial toll could reach 1.6 billion euros.The last two weeks in April brought extremely cold conditions of below 26°F and caused complete destruction at some wineries. <br> <iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/gaugeChart.html"></iframe>',
             location: {
-                center: [-0.90165, 45.35693],
-                zoom: 8.68,
-                pitch: 59.5,
-                bearing: 20.80
+                center: [-0.92355,45.16626],
+                zoom: 8.50,
+                pitch: 53.50,
+                bearing: 22.40
             },
             onChapterEnter: [
                 {
@@ -269,7 +299,7 @@ var config = {
                 {
             id: 'shiftB',
             alignment: 'center',
-            title: 'TRANSITION B - Shifting to California',
+            title: 'TRANSITION - Shifting to California',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
             description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
             // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
