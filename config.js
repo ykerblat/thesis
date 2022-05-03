@@ -151,6 +151,10 @@ var config = {
                                 {
                     layer: 'France_AOC_highZoom',
                     opacity: 0,
+                },
+                {
+                    layer: 'France_geojson',
+                    opacity: 0,
                 }
             ]
         },
