@@ -66,9 +66,50 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2wyZ2Fkdm53MDIxbDNicndjZ
 const map = new mapboxgl.Map({
   container: 'map', // container element id
   style: 'mapbox://styles/mapbox/light-v10',
-  center: [-115.67532, 37.77697], // initial map center in [lon, lat]
+  center: [-122.90992, 37.13883], // initial map center in [lon, lat]
   zoom: 5.83
 });
+
+map.on('load', () => {
+  map.addLayer({
+    id: 'fire',
+    type: 'Feature',
+    source: {
+      type: 'geojson',
+      data: '/wineMap/CA_fire_since1990.geojson' // replace this with the url of your own geojson
+    },
+    paint: {
+      'circle-radius': [
+        'interpolate',
+        ['linear'],
+        ['number', ['get', 'Casualty']],
+        0,
+        4,
+        5,
+        24
+      ],
+      'circle-color': [
+        'interpolate',
+        ['linear'],
+        ['number', ['get', 'Casualty']],
+        0,
+        '#2DC4B2',
+        1,
+        '#3BB3C3',
+        2,
+        '#669EC4',
+        3,
+        '#8B88B6',
+        4,
+        '#A2719B',
+        5,
+        '#AA5E79'
+      ],
+      'circle-opacity': 0.8
+    }
+});
+});
+
 
 
 </script>
