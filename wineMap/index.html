@@ -73,7 +73,7 @@ const map = new mapboxgl.Map({
 map.on('load', () => {
   map.addLayer({
     id: 'fire',
-    type: 'Feature',
+    type: 'polygon',
     source: {
       type: 'geojson',
       data: '/wineMap/CA_fire_since1990.geojson' // replace this with the url of your own geojson

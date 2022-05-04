@@ -272,31 +272,35 @@ var config = {
             ]
         },
         {
-            id: 'CH3-2',
-            alignment: 'center',
-            title: 'California drives the wine industry in the US',
-            image: 'https://www.e-education.psu.edu/geog486/sites/www.e-education.psu.edu.geog486/files/Lesson_05/Images/5.8.1.PNG',
-            description: 'California is the nation’s number one wine state and the source of 81 percent of U.S. wine production. California wine makes a significant contribution to the nation through job creation, taxes, etc.',
+            id: 'US-wine',
+            alignment: 'left',
+            title: '',
+            image: '',
+            description: '<iframe title="Between 2001  - 2020 , California has been boosting the US wine industry" aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/8/" scrolling="no" frameborder="0" style="border: none;" width="415" height="1119"></iframe>',
             location: {
-                center: [-114.16436, 37.02186],
-                zoom: 5.39,
-                pitch: 48.00,
-                bearing: -4.00
+                center: [-126.15462, 34.54465],
+                zoom: 3.30,
+                pitch: 0,
+                bearing:0
             },
             onChapterEnter: [
                 {
-                    layer: 'whiteWine',
-                    opacity: 1,
-                    layer: 'redWine',
-                    opacity: 1
+                    layer: 'wineRegions',
+                    opacity: 0.6,
+                },
+                {
+                    layer: 'USA_geojson',
+                    opacity: 0.5,
                 }
             ],
             onChapterExit: [
                                 {
-                    layer: 'whiteWine',
+                    layer: 'wineRegions',
                     opacity: 0,
-                    layer: 'redWine',
-                    opacity: 0
+                },
+                {
+                    layer: 'USA_geojson',
+                    opacity: 0,
                 }
             ]
         },
