@@ -32,7 +32,7 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.4
+                    opacity: 0.0,
                 }
             ]
         },
@@ -59,7 +59,7 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.4
+                    opacity: 0,
                 }
             ]
         },
@@ -79,16 +79,12 @@ var config = {
                 {
                     layer: 'whiteWine',
                     opacity: 0,
-                    layer: 'redWine',
-                    opacity: 0
                 }
             ],
             onChapterExit: [
                                 {
                     layer: 'whiteWine',
                     opacity: 0,
-                    layer: 'redWine',
-                    opacity: 0
                 }
             ]
         },
@@ -191,7 +187,7 @@ var config = {
             ]
         },
         {
-                    id: 'shiftB',
+                    id: 'shiftA',
             alignment: 'center',
             title: 'TRANSITION - Shifting to California',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
@@ -239,10 +235,41 @@ var config = {
             ],
             onChapterExit: [
                                 {
-                    layer: 'whiteWine',
+                    layer: 'Bordeaux_frost',
                     opacity: 0,
-                    layer: 'redWine',
-                    opacity: 0
+                }
+            ]
+        },
+        {
+            id: 'US-wine',
+            alignment: 'left',
+            title: '',
+            image: '',
+            description: '<iframe title="Between 2001  - 2020 , California has been boosting the US wine industry" aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/8/" scrolling="no" frameborder="0" style="border: none;" width="415" height="1119"></iframe>',
+            location: {
+                center: [-117.46270, 36.28082],
+                zoom: 3.67,
+                pitch: 0,
+                bearing:0
+            },
+            onChapterEnter: [
+                {
+                    layer: 'wineRegions',
+                    opacity: 0.5,
+                },
+                {
+                    layer: 'USA_geojson',
+                    opacity: 0.3,
+                },
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'wineRegions',
+                    opacity: 0,
+                },
+                {
+                    layer: 'USA_geojson',
+                    opacity: 0,
                 }
             ]
         },
@@ -271,39 +298,6 @@ var config = {
                 }
             ]
         },
-        {
-            id: 'US-wine',
-            alignment: 'left',
-            title: '',
-            image: '',
-            description: '<iframe title="Between 2001  - 2020 , California has been boosting the US wine industry" aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/8/" scrolling="no" frameborder="0" style="border: none;" width="415" height="1119"></iframe>',
-            location: {
-                center: [-126.15462, 34.54465],
-                zoom: 3.30,
-                pitch: 0,
-                bearing:0
-            },
-            onChapterEnter: [
-                {
-                    layer: 'wineRegions',
-                    opacity: 0.6,
-                },
-                {
-                    layer: 'USA_geojson',
-                    opacity: 0.5,
-                }
-            ],
-            onChapterExit: [
-                                {
-                    layer: 'wineRegions',
-                    opacity: 0,
-                },
-                {
-                    layer: 'USA_geojson',
-                    opacity: 0,
-                }
-            ]
-        },
                 {
             id: 'shiftB',
             alignment: 'center',
@@ -312,7 +306,7 @@ var config = {
             description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
             // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
             location: {
-                center: [-82.73387, 38.03087],
+                center: [-115.67532, 37.77697],
                 zoom: 3.64,
                 pitch: 0.00,
                 bearing: 0.00
@@ -320,17 +314,17 @@ var config = {
             onChapterEnter: [
                 {
                     // layer: 'whiteWine',
-                    opacity: 0,
+                    // opacity: 0,
                     // layer: 'redWine',
-                    opacity: 0
+                    // opacity: 0
                 }
             ],
             onChapterExit: [
                                 {
                     // layer: 'whiteWine',
-                    opacity: 0,
+                    // opacity: 0,
                     // layer: 'redWine',
-                    opacity: 0
+                    // opacity: 0
                 }
             ]
         },
