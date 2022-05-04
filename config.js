@@ -139,7 +139,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'France_geojson',
+                    layer: 'france_dept',
                     opacity: 0.5,
                 }
             ],
@@ -149,7 +149,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'France_geojson',
+                    layer: 'france_dept',
                     opacity: 0,
                 }
             ]
