@@ -140,7 +140,7 @@ var config = {
                 },
                 {
                     layer: 'France_geojson',
-                    opacity: 0.1,
+                    opacity: 0.5,
                 }
             ],
             onChapterExit: [
