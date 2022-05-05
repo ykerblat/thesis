@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>landing page</title>
+        <!-- <link rel="stylesheet" href="css/main.css" /> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<style>
+
+#video-compare-container {
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 0%;
+}
+#video-compare-container > video {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+#video-cover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#video-cover video {
+  width: 100%;
+  position: absolute;
+}
+
+#landing {
+  position: absolute;
+  z-index: 9999999999;
+  bottom: 25%;left:40%;
+  font-size: 24px;
+  mix-blend-mode: difference;
+  color: white;
+  border-color: white;
+}
+
+</style>
+
+    </head>
+    <body>
+      
+     
+        <div id="video-compare-container">
+            <!-- Mask -->
+            <video  sound muted loop autoplay poster="/mask.png">
+              <source src=/mask.mp4>
+            </video>
+            <!-- Cover -->
+           <div id="video-cover">
+              <video  muted loop autoplay poster="/cover.png">
+                <source src=/cover.mp4>
+              </video>
+            </div>
+
+            <a class="btn btn-outline-dark" id="landing" href="vignette_1.html">Scenarios</a>
+            <a class="btn btn-outline-dark" id="landing" href="vignette_a.html" style="margin-left:150px;">Policies</a>
+
+              </div>
+
+              <script>
+                    //Mouse XRay Effect  
+                    function trackLocation(e) {
+                    var rect = videoContainer.getBoundingClientRect(),
+                          position = ((e.pageY - rect.top) / videoContainer.offsetHeight)*100;
+                    if (position <= 100) { 
+                    videoCover.style.height = position+"%";
+                    coveredVideo.style.height = ((100/position)*100)+"%";
+                    coveredVideo.style.zIndex = 3;
+                        }
+                    }
+                    var videoContainer = document.getElementById("video-compare-container"),
+                    videoCover = document.getElementById("video-cover"),
+                    coveredVideo = videoCover.getElementsByTagName("video")[0];
+                    videoContainer.addEventListener( "mousemove", trackLocation, false); 
+                    videoContainer.addEventListener("touchstart",trackLocation,false);
+                    videoContainer.addEventListener("touchmove",trackLocation,false);
+                    </script>
+
+    </body>
+</html>
