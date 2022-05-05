@@ -261,6 +261,10 @@ var config = {
                     layer: 'USA_geojson',
                     opacity: 0.3,
                 },
+                {
+                    layer: 'CA_boundary',
+                    opacity: 0.7,
+                }
             ],
             onChapterExit: [
                                 {
@@ -270,6 +274,10 @@ var config = {
                 {
                     layer: 'USA_geojson',
                     opacity: 0,
+                },
+                {
+                    layer: 'CA_boundary',
+                    opacity: 0.7,
                 }
             ]
         },
