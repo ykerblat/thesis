@@ -139,7 +139,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'france_dept',
+                    layer: 'france-dept',
                     opacity: 0.5,
                 }
             ],
@@ -149,7 +149,7 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'france_dept',
+                    layer: 'france-dept',
                     opacity: 0,
                 }
             ]
