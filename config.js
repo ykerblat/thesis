@@ -245,7 +245,7 @@ var config = {
             alignment: 'left',
             title: '',
             image: '',
-            description: '<iframe title="Between 2001  - 2020 , California has been boosting the US wine industry" aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/9/" scrolling="no" frameborder="0" style="border: none;" width="428" height="1119"></iframe>',
+            description: '<iframe title=" California keeps boosting the US wine industry " aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/14/" scrolling="no" frameborder="0" style="border: none;" width="480" height="1093"></iframe>',
             location: {
                 center: [-117.46270, 36.28082],
                 zoom: 3.67,
