@@ -351,7 +351,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'CA_fire',
-                    opacity: 0.8,
+                    opacity: 0.7,
                     
                 },
                                  {
@@ -360,7 +360,7 @@ var config = {
                  },
                                                   {
                      layer: 'CA_boundary',
-                     opacity: 1,
+                     opacity: 0.4,
                  },
             ],
             onChapterExit: [
