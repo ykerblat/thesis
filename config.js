@@ -355,12 +355,12 @@ var config = {
                     
                 },
                                  {
-                     layer: 'vineyard_light',
-                     opacity: 0,
+                     layer: 'CA_vineyard',
+                     opacity: 1,
                  },
                                                   {
                      layer: 'CA_boundary',
-                     opacity: 0,
+                     opacity: 1,
                  },
             ],
             onChapterExit: [
