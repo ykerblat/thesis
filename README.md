@@ -8,6 +8,11 @@ Initial [Mindmap](https://app.mural.co/t/newschool14/m/newschool14/1643690438711
 
 [Current XD wireframe link as of March 8](https://xd.adobe.com/view/dd79b8a7-51c0-437b-afe1-0aad26b45b60-882a/)
 
+## Abstract (300 words)
+
+_Winemakers are some of the most seasoned climate scientists in the world. Agricultural techniques required for harvesting grapes accumulated over decades (sometimes centuries), coupled with precise knowledge of environmental patterns surrounding their vineyards, provide winemakers with unrivaled expertise and effective methods to optimize wine production. Because climate is the most essential ingredient required for wine production, it affects the level of suitability of grape varieties to a particular terrain, and determines the type and quality of the wine that can be produced. However, recent extreme weather events also confirm that grapes are extremely sensitive to sudden changes in temperature and other unforeseen fluctuations. These shifts raise difficult questions for the wine industry and could potentially disrupt centuries of cultural practices and agricultural norms in winemaking while also unlocking new opportunities in adapting to climate change, something that will require innovation and flexibility.
+_While the topic of climate change in the wine industry attracts much media and academic attention and generates important discussions within the wine industry, most of the existing empirical evidence is either geographically localized, confined to a specific grape variety, and/or difficult to grasp for wine enthusiasts. In addition, it is also difficult for a wine aficionado to access updated and/or user-friendly applications of cutting-edge climate change information suited for the wine industry.  The Ripe for Disruption project provides a glimpse into the future of the wine industry, by using geovisualization tools to help the reader better grasp which wine regions (and wineries) are more likely to be on the frontlines of global warming in the future. A closer look at extreme weather events that recently impacted the “Old World '' and the “New World '' is also provided to make sense of these macro-level shifts, before finally, exploring the different opportunities and adaptive changes the wine industry might go through as a result.
+
 
 ## Problem statement
 
