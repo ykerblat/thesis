@@ -373,7 +373,7 @@ var config = {
         
                 {
             id: 'ShiftC',
-            alignment: 'Center',
+            alignment: 'full',
             title: 'Emerging practices in adaptive practices',
             image: 'https://www.frontiersin.org/files/Articles/607859/fpls-11-607859-HTML/image_m/fpls-11-607859-g003.jpg',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id. <br>',

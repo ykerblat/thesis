@@ -1,3 +1,6 @@
+<!-- Visual inspiration - https://codepen.io/guestn/pen/kGaxYP -->
+
+
 <!DOCTYPE html>
 
 <head>
@@ -8,10 +11,85 @@
     <script src= "https://d3js.org/d3-color.v1.min.js"></script> 
     <script src= "https://d3js.org/d3-interpolate.v1.min.js"></script> 
     <script src= "https://d3js.org/d3-scale-chromatic.v1.min.js"></script> 
-    
     <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+      div {position:absolute;}
+
+#frame {width: 1500px; height:1000px; 
+  margin: 50px; 
+  overflow:hidden; 
+  /* border: 1px solid #ccc;  */
+}
+
+#bottle { 
+    top: 180px; left:420px;
+    -webkit-transform : rotate(20deg) scale(1.2); 
+}
+
+  #bottle1 {
+    width: 400px;
+    height:129px;
+    right:220px;
+    background: green;
+    border-top: 1px solid #222; 
+    border-bottom: 80px solid #040;
+    box-shadow: 0px -35px 0px 0px #090 inset, 0px 25px 0px 0px #0b0 inset;
+
+  }
+  #bottle2 {
+    width: 140px;
+    height:208px;
+    right: 150px;
+    border-radius: 50%;
+    background: green;
+    box-shadow: 0px -35px 0px 1px #040 inset, 0px 25px 0px 0px #0b0 inset;
+    border: 1px solid #222;
+  }
+
+  #bottle3 {
+    width: 10px;
+    height:70px;
+    right: 0px;
+    top: 70px;
+    border-radius: 35px 0 0 35px;
+    background: green;
+  }
+
+  #bottle4 {
+    top: 5px; right:24px;
+    border-left: 130px solid green;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    height: 40px;
+    width: 100px;
+  }
+
+#capsule { top: 105px; right:5px;
+}
+  #capsule-top {
+    width: 25px; height: 80px; top: -40px; right:0px;
+    background: #222;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px 1px #555 inset;
+  }
+
+  #capsule-bottom {
+      width: 120px; height: 72px; background: #222; top: -36px; right:25px;
+    box-shadow: 0px 5px 0px 1px #555 inset;
+  }
+
+#label {
+  width: 200px; height: 102px; right:260px; top: 105px;
+  background: #ccc;
+  box-shadow: -20px -25px 50px 0px #444 inset;
+  border-bottom: 2px solid #777;
+  border-top: 1px solid #666;
+}
+    </style>
+
+  </head>
 
 <body>
 
@@ -19,32 +97,48 @@
 <script src="https://d3js.org/d3.v6.js"></script>
 
 <!-- Create a div where the graph will take place -->
+
+<div id="frame">
+
+
+  <div id="bottle">
+      <div id="bottle4"></div>
+      <div id="bottle2"></div>
+      <div id="bottle1"></div>
+      <div id="bottle3"></div>
+      <div id="capsule">
+        <div id="capsule-top"></div>
+        <div id="capsule-bottom"></div> 
+      </div>
+      <div id="label"></div>
+    </div>
+  
+  </div>
+
 <div id="streamgraph"></div>
-            <!--<script src="streamgraph.js"></script>-->
 
 
 <script>
     /*global d3*/
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 20, bottom: 0, left: 70},
+var margin = {top: 150, right: 20, bottom: 0, left: 480},
     // width = 1000 - margin.left - margin.right,
-    width = 1200,
-    height = 800;
+    width = 1050,
+    height = 600;
 
 // append the svg object to the body of the page
 var svg = d3.select("#streamgraph")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    // .attr("transform", "rotate(90)")
+    .attr("transform", "rotate(15)")
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Parse the Data
 d3.csv("../dataset/streamChart.csv").then( function(data) {
-// d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered_wide.csv", function(data) {
 
   // List of groups = header of the csv files
   var keys = data.columns.slice(1)
@@ -61,10 +155,6 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
   // Customization
   svg.selectAll(".tick line").attr("stroke", "#b8b8b8")
   
-  
-
-// svg.append("tickValues")
-//     .attr("transform", "rotate(90)")
 
 
   // Add X axis label:
@@ -90,7 +180,9 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
     
   var color = d3.scaleOrdinal()
   .domain(keys)
-  .range(["#9E0142", "#DB494A", "#F88E53", "#FED281", "#FBF8B0", "#D5EE9F", "#89CFA5", "#4696B3", "#4E4381", "orange"])
+  // .range(["#9E0142", "#DB494A", "#F88E53", "#FED281", "#FBF8B0", "#D5EE9F", "#89CFA5", "#4696B3", "#4E4381", "orange"])
+  .range(["#d9582c", "#e99b32", "#d9582c", "#d9582c", "#c43028", "#e99b32", "#7b0518", "#ce9b6d", "#d9592c"])
+
 
 
   //stack the data?

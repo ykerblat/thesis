@@ -1,0 +1,110 @@
+<!-- Visual inspiration - https://codepen.io/guestn/pen/kGaxYP -->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bottle SVG</title>
+
+<style>
+
+div {position:absolute;}
+
+#frame {width: 900px; height:900px; 
+  margin: 60px; 
+  overflow:hidden; 
+  border: 1px solid #ccc; 
+}
+
+#bottle { 
+    top: 400px; left:455px;
+    /* transform:rotate(15deg); */
+    -webkit-transform : rotate(15deg) scale(1.2); 
+    /* transform: matrix(1.25, 0, 0, 1.25, 0, 0); */
+    /* transform: scale(1.5, 1.5); */
+}
+
+  #bottle1 {
+    width: 400px;
+    height:129px;
+    right:220px;
+    background: green;
+    border-top: 1px solid #222; 
+    border-bottom: 80px solid #040;
+    box-shadow: 0px -35px 0px 0px #090 inset, 0px 25px 0px 0px #0b0 inset;
+
+  }
+  #bottle2 {
+    width: 140px;
+    height:208px;
+    right: 150px;
+    border-radius: 50%;
+    background: green;
+    box-shadow: 0px -35px 0px 1px #040 inset, 0px 25px 0px 0px #0b0 inset;
+    border: 1px solid #222;
+  }
+
+  #bottle3 {
+    width: 10px;
+    height:70px;
+    right: 0px;
+    top: 70px;
+    border-radius: 35px 0 0 35px;
+    background: green;
+  }
+
+  #bottle4 {
+    top: 5px; right:24px;
+    border-left: 130px solid green;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    height: 40px;
+    width: 100px;
+  }
+
+#capsule { top: 105px; right:5px;
+}
+  #capsule-top {
+    width: 25px; height: 80px; top: -40px; right:0px;
+    background: #222;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px 1px #555 inset;
+  }
+
+  #capsule-bottom {
+      width: 120px; height: 72px; background: #222; top: -36px; right:25px;
+    box-shadow: 0px 5px 0px 1px #555 inset;
+  }
+
+#label {
+  width: 200px; height: 102px; right:260px; top: 105px;
+  background: #ccc;
+  box-shadow: -20px -25px 50px 0px #444 inset;
+  border-bottom: 2px solid #777;
+  border-top: 1px solid #666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="frame">
+
+
+<div id="bottle">
+    <div id="bottle4"></div>
+    <div id="bottle2"></div>
+    <div id="bottle1"></div>
+    <div id="bottle3"></div>
+    <div id="capsule">
+      <div id="capsule-top"></div>
+      <div id="capsule-bottom"></div> 
+    </div>
+    <div id="label"></div>
+  </div>
+
+</div>
+
+</body>
