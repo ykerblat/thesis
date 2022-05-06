@@ -262,9 +262,13 @@ var config = {
                     opacity: 0.3,
                 },
                 {
-                    layer: 'CA_boundary',
+                    layer: 'AVAs_boundaries',
                     opacity: 0.7,
-                }
+                },
+               {
+                layer: 'CA_boundary',
+                opacity: 0.7,
+            } 
             ],
             onChapterExit: [
                                 {
@@ -277,8 +281,12 @@ var config = {
                 },
                 {
                     layer: 'CA_boundary',
-                    opacity: 0.7,
-                }
+                    opacity: 0.5,
+                },
+                {
+                    layer: 'AVAs_boundaries',
+                    opacity: 0,
+                },
             ]
         },
         {
@@ -296,7 +304,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'whiteWine',
-                    opacity: 0
+                    opacity: 1
                 }
             ],
             onChapterExit: [
