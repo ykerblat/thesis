@@ -202,15 +202,15 @@ var config = {
             onChapterEnter: [
                 {
                     // layer: 'whiteWine',
-                    opacity: 0,
+                    // opacity: 0,
                 }
             ],
             onChapterExit: [
                                 {
                     // layer: 'whiteWine',
-                    opacity: 0,
+                    // opacity: 0,
                     // layer: 'redWine',
-                    opacity: 0
+                    // opacity: 0
                 }
             ]
         },
@@ -248,7 +248,7 @@ var config = {
             description: '<iframe title=" California keeps boosting the US wine industry " aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/14/" scrolling="no" frameborder="0" style="border: none;" width="480" height="1093"></iframe>',
             location: {
                 center: [-117.46270, 36.28082],
-                zoom: 4.5,
+                zoom: 4,
                 pitch: 0,
                 bearing:0
             },
