@@ -140,7 +140,7 @@ var config = {
                 },
                 {
                     layer: 'france-dept',
-                    opacity: 0.5,
+                    opacity: 0.3,
                 }
             ],
             onChapterExit: [
@@ -356,11 +356,11 @@ var config = {
                 },
                                  {
                      layer: 'CA_vineyard',
-                     opacity: 1,
+                     opacity: 0,
                  },
                                                   {
                      layer: 'CA_boundary',
-                     opacity: 0.4,
+                     opacity: 0,
                  },
             ],
             onChapterExit: [
