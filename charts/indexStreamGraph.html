@@ -19,12 +19,12 @@
 
 #frame {width: 1500px; height:1000px; 
   margin: 50px; 
-  overflow:hidden; 
+  /* overflow:hidden;  */
   /* border: 1px solid #ccc;  */
 }
 
 #bottle { 
-    top: 180px; left:420px;
+    top: 195px; left:450px;
     -webkit-transform : rotate(20deg) scale(1.2); 
 }
 
@@ -87,19 +87,16 @@
   border-bottom: 2px solid #777;
   border-top: 1px solid #666;
 }
+
     </style>
 
   </head>
 
 <body>
 
-<!-- Load d3.js -->
 <script src="https://d3js.org/d3.v6.js"></script>
 
-<!-- Create a div where the graph will take place -->
-
 <div id="frame">
-
 
   <div id="bottle">
       <div id="bottle4"></div>
@@ -112,11 +109,10 @@
       </div>
       <div id="label"></div>
     </div>
-  
+    
   </div>
 
 <div id="streamgraph"></div>
-
 
 <script>
     /*global d3*/
@@ -151,18 +147,32 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
     .attr("transform", "translate(0," + height*0.8 + ")")
     // .call(d3.axisBottom(x).tickSize(-height*.7).tickValues([1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970,	1971, 1972, 1973,	1974, 1975,	1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983,	1984,	1985,	1986, 1987, 1988, 1989,	1990,	1991,	1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]))
     .call(d3.axisBottom(x).tickValues([1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005,	2010, 2015, 2020]))
+    .style("font-size", "16px")
     .select(".domain").remove()
   // Customization
-  svg.selectAll(".tick line").attr("stroke", "#b8b8b8")
-  
+  svg.selectAll(".tick line")
+  .attr("stroke", "#b8b8b8")
 
+
+  // svg.append('g')
+  //   .attr('transform', 'translate(50, 638)')
+  //   .attr('id', 'x-axis')
+  //   .classed('tick', true)
+  //   .call(d3.axisBottom(xScale)
+  //   .tickFormat(d3.format('d')));
+  //   });
+  
 
   // Add X axis label:
   svg.append("text")
       .attr("text-anchor", "end")
       .attr("x", width)
       .attr("y", height-30 )
-      .text("Time (year)");
+      .text("Year")
+      .attr("font-family", function(d,i) {return i<5 ? "serif" : "sans-serif"; })
+      // .attr("font-family", roboto)
+      .style("font-size", 20);
+
 
   // Add Y axis
   var y = d3.scaleLinear()
@@ -181,7 +191,7 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
   var color = d3.scaleOrdinal()
   .domain(keys)
   // .range(["#9E0142", "#DB494A", "#F88E53", "#FED281", "#FBF8B0", "#D5EE9F", "#89CFA5", "#4696B3", "#4E4381", "orange"])
-  .range(["#d9582c", "#e99b32", "#d9582c", "#d9582c", "#c43028", "#e99b32", "#7b0518", "#ce9b6d", "#d9592c"])
+  .range(["#ffb096", "#ff594a", "#a70206", "#ff6f5b", "#be0017", "#ff846f", "#d72728", "#ff9a83", "#ee4138"])
 
 
 

@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+
+#popsicle #drop-left {
+  animation: drop-left 3s ease-in-out infinite;
+}
+#popsicle #drop-right {
+  animation: drop-right 2.5s ease-in-out infinite;
+}
+
+@keyframes drop-left {
+  from {
+    transform: translate(30px, 239px);
+    opacity: 1;
+  }
+  to {
+    transform: translate(30px, 330px);
+    opacity: 0;
+  }
+}
+@keyframes drop-right {
+  from {
+    transform: translate(120px, 239px);
+    opacity: 1;
+  }
+  to {
+    transform: translate(120px, 360px);
+    opacity: 0;
+  }
+}
