@@ -255,29 +255,29 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'USA_geojson',
-                    opacity: 0.3
+                    opacity: 0.3,
                 },
                 {
                     layer: 'AVA-USA',
-                    opacity: 0.7
+                    opacity: 0.7,
                 },
                {
                 layer: 'CA_boundary',
-                opacity: 0.5
+                opacity: 0.5,
             } 
             ],
             onChapterExit: [
                 {
                     layer: 'USA_geojson',
-                    opacity: 0
+                    opacity: 0,
                 },
                 {
                     layer: 'AVA-USA',
-                    opacity: 0
+                    opacity: 0,
                 },
                 {
                     layer: 'CA_boundary',
-                    opacity: 0.3
+                    opacity: 0.3,
                 }
             ]
         },
