@@ -1,8 +1,6 @@
 var config = {
     style: 'mapbox://styles/kerby418/cl1mm4ra5000514p82p2zivs5',
-    // accessToken: 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2wxcDYyMXM4MDlzdTNscGV5M3Y2aGFtbyJ9.shtgetSJ_VYF-IaJ49AAiA',
-    // accessToken: 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2wyZ2Fkdm53MDIxbDNicndjZ2IwcXljayJ9.gH0yT1kvfWcZ9kYy9uzE6Q',
-   accessToken: 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2t2bzdxNm11NnYyMTJwbXNhNmIwOGhyciJ9.mGHj7xqsXLDBmhU_WhRnSQ',
+    accessToken: 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2t2bzdxNm11NnYyMTJwbXNhNmIwOGhyciJ9.mGHj7xqsXLDBmhU_WhRnSQ',
     showMarkers: false,
     theme: 'dark',
     title: 'Ripe for Disruption',
@@ -22,6 +20,9 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
@@ -41,7 +42,7 @@ var config = {
             id: 'bubble',
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
-            // image: 'https://images.unsplash.com/photo-1592758091373-bcec0e646d4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3474&q=80',
+            image: '',
             description: 'The wine industry is thriving and we have never consumed so much wine previously.Today, half of the world’s wine exports come from two countries, France and Italy and 3/4 wines come from Europe but the New World has also been growing very fast. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
@@ -49,6 +50,9 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
@@ -75,6 +79,9 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'whiteWine',
@@ -92,8 +99,8 @@ var config = {
 
         
                 {
-            id: 'shiftA',
-            alignment: 'center',
+            id: 'shift',
+            alignment: 'full',
             title: 'A glimpse into the "Old World"',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
@@ -103,6 +110,9 @@ var config = {
                 // pitch: 0.00,
                 // bearing: 0.00
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     // layer: 'whiteWine',
@@ -133,6 +143,9 @@ var config = {
                 pitch: 48.50,
                 bearing: 1.60
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'France_AOC_highZoom',
@@ -166,6 +179,9 @@ var config = {
                 pitch: 55.00,
                 bearing: -36.80
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'bordeaux-pricing',
@@ -187,7 +203,7 @@ var config = {
             ]
         },
         {
-                    id: 'shiftA',
+            id: 'shiftA',
             alignment: 'center',
             title: 'TRANSITION - Shifting to California',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
@@ -199,6 +215,9 @@ var config = {
                 pitch: 60.00,
                 bearing: -26.22
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     // layer: 'whiteWine',
@@ -227,6 +246,9 @@ var config = {
                 pitch: 53.50,
                 bearing: 22.40
             },
+            mapAnimation: "flyto",
+            rotateAnimation: true,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'Bordeaux_frost',
@@ -252,6 +274,9 @@ var config = {
                 pitch: 0,
                 bearing:0
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'USA_geojson',
@@ -293,6 +318,9 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'whiteWine',
@@ -319,6 +347,9 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     // layer: 'whiteWine',
@@ -348,6 +379,9 @@ var config = {
                 pitch: 0.00,
                 bearing: -2.40
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: 'CA_fire',
@@ -383,6 +417,9 @@ var config = {
                 pitch: 0.00,
                 bearing: -2.40
             },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
             onChapterEnter: [
                 {
                     layer: '',
