@@ -1,3 +1,17 @@
+// let topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
+
+// let titleDiv =
+//   "<h1>The Geographical Distribution of Subway Usage Decrease Due to COVID-19</h1>";
+
+// let bylineDiv = "<p>By Juan Francisco Saldarriaga and Michael Krisch</p>";
+
+// let descriptionDiv =
+//   '<p>This tutorial demonstrates how to use <a href="https://github.com/mapbox/storytelling">Mapbox Storytelling</a> with our previous web mapping example. Here we will use Mapbox storytelling template to first, give an overview of the decrease in subway usage around the city, and second, zoom into three different locations that exemplify the diversity of conditions around New York.</p>' +
+//   '<p>We will use the <a href="https://pointsunknown.nyc/web%20mapping/mapbox/2020/03/25/10_WebmappingTurnstileData.html">previous web map displaying MTA turnstile data</a> as the basis for our story. In this process we will use Mapbox GL JS, as well as Intersection Observer and Scrollama as our main JavaScript libraries.</p>' +
+//   "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In harum natus eos cum rem iure aperiam omnis distinctio illo quis, sunt nesciunt sint impedit deleniti dolor saepe necessitatibus eligendi aut?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In harum natus eos cum rem iure aperiam omnis distinctio illo quis, sunt nesciunt sint impedit deleniti dolor saepe necessitatibus eligendi aut?</p>" +
+//   '<p style="text-align:center">Scroll to continue<br>▼</p>';
+
+
 var config = {
     style: 'mapbox://styles/kerby418/cl1mm4ra5000514p82p2zivs5',
     accessToken: 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2t2bzdxNm11NnYyMTJwbXNhNmIwOGhyciJ9.mGHj7xqsXLDBmhU_WhRnSQ',
@@ -10,7 +24,8 @@ var config = {
     chapters: [
         {
             id: 'globalWine',
-            alignment: 'center',
+            alignment: 'full',
+            hidden:false,
             title: 'Climate change is pushing the boundaries of the wine industry. (PENDING)',
             image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
             description: 'Today, climate change is forcing winemakers to move further from the Equator. A recent study reckons that the northern frontier of vine cultivation in Europe could advance by 20-60km each decade between now and 2050. So how did we get it here?',
@@ -153,7 +168,7 @@ var config = {
                 },
                 {
                     layer: 'france-dept',
-                    opacity: 0.3,
+                    opacity: 0.5,
                 }
             ],
             onChapterExit: [
@@ -180,7 +195,7 @@ var config = {
                 bearing: -36.80
             },
             mapAnimation: "flyTo",
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: "",
             onChapterEnter: [
                 {
@@ -203,8 +218,36 @@ var config = {
             ]
         },
         {
+            id: 'CH2-3',
+            alignment: 'left',
+            title: 'Devastating frost events in Bordeaux in 2021',
+            image: '',
+            description: 'Devastating frost has caused a 40% drop in the Bordeaux 2017 wine harvest and new estimates show the financial toll could reach 1.6 billion euros.The last two weeks in April brought extremely cold conditions of below 26°F and caused complete destruction at some wineries. <br> <iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/gaugeChart.html"></iframe>',
+            location: {
+                center: [-0.92355,45.16626],
+                zoom: 8.50,
+                pitch: 53.50,
+                bearing: 22.40
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: true,
+            callback: "",
+            onChapterEnter: [
+                {
+                    layer: 'Bordeaux_frost',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'Bordeaux_frost',
+                    opacity: 0,
+                }
+            ]
+        },
+        {
             id: 'shiftA',
-            alignment: 'center',
+            alignment: 'full',
             title: 'TRANSITION - Shifting to California',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
             description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
@@ -233,35 +276,6 @@ var config = {
                 }
             ]
         },
-        
-        {
-            id: 'CH2-3',
-            alignment: 'left',
-            title: 'Devastating frost events in Bordeaux in 2021',
-            image: '',
-            description: 'Devastating frost has caused a 40% drop in the Bordeaux 2017 wine harvest and new estimates show the financial toll could reach 1.6 billion euros.The last two weeks in April brought extremely cold conditions of below 26°F and caused complete destruction at some wineries. <br> <iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/gaugeChart.html"></iframe>',
-            location: {
-                center: [-0.92355,45.16626],
-                zoom: 8.50,
-                pitch: 53.50,
-                bearing: 22.40
-            },
-            mapAnimation: "flyto",
-            rotateAnimation: true,
-            callback: "",
-            onChapterEnter: [
-                {
-                    layer: 'Bordeaux_frost',
-                    opacity: 1,
-                }
-            ],
-            onChapterExit: [
-                                {
-                    layer: 'Bordeaux_frost',
-                    opacity: 0,
-                }
-            ]
-        },
         {
             id: 'US-wine',
             alignment: 'left',
@@ -280,7 +294,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'USA_geojson',
-                    opacity: 0.3,
+                    opacity: 0.1,
                 },
                 {
                     layer: 'AVA-USA',
@@ -334,39 +348,6 @@ var config = {
                 }
             ]
         },
-                {
-            id: 'shiftB',
-            alignment: 'center',
-            title: 'TRANSITION - Shifting to California',
-            // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
-            description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
-            // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
-            location: {
-                center: [-115.67532, 37.77697],
-                zoom: 3.64,
-                pitch: 0.00,
-                bearing: 0.00
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [
-                {
-                    // layer: 'whiteWine',
-                    // opacity: 0,
-                    // layer: 'redWine',
-                    // opacity: 0
-                }
-            ],
-            onChapterExit: [
-                                {
-                    // layer: 'whiteWine',
-                    // opacity: 0,
-                    // layer: 'redWine',
-                    // opacity: 0
-                }
-            ]
-        },
         {
             id: 'CH3-3-California',
             alignment: 'right',
@@ -401,6 +382,38 @@ var config = {
                                 {
                     layer: 'CA_fire',
                     opacity: 0
+                }
+            ]
+        },
+
+        {
+            id: 'shiftA',
+            alignment: 'full',
+            title: 'TRANSITION - Shifting to California',
+            // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
+            description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
+            // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
+            location: {
+                center: [-0.94343, 44.99235],
+                zoom: 9.56,
+                pitch: 60.00,
+                bearing: -26.22
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                {
+                    // layer: 'whiteWine',
+                    // opacity: 0,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    // layer: 'whiteWine',
+                    // opacity: 0,
+                    // layer: 'redWine',
+                    // opacity: 0
                 }
             ]
         },

@@ -195,6 +195,7 @@
 
 <body>
 
+    
     <div id="map"></div>
     <div id="story"></div>
     <script src="./config.js"></script>
@@ -396,8 +397,8 @@
                     if (chapter.rotateAnimation) {
                         map.once('moveend', function() {
                             const rotateNumber = map.getBearing();
-                            map.rotateTo(rotateNumber + 270, {
-                                duration: 30000,
+                            map.rotateTo(rotateNumber + 180, {
+                                duration: 18000,
                                 easing: function(t) {
                                     return t;
                                 }
