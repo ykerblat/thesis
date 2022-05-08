@@ -378,12 +378,12 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'CA_fire',
-                    opacity: 0.7,
+                    opacity: 0.5,
                     
                 },
                                  {
                      layer: 'CA_vineyard',
-                     opacity: 0,
+                     opacity: 1,
                  },
                                                   {
                      layer: 'CA_boundary',
@@ -403,7 +403,8 @@ var config = {
             alignment: 'full',
             title: 'TRANSITION - Shifting to California',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
-            description: '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
+            description: '',
+            // '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
             // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
             location: {
                 center: [-0.94343, 44.99235],
