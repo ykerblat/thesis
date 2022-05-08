@@ -71,8 +71,10 @@ html,body,
     .ticks({ type: 'line', fill: 'white', length: 2 });
 
   gauge.title(
-    '<span style="font-family: Geneva, Verdana, sans-serif;"> Proportion of wine harvest impacted by the <span style="color:#e71845;"><strong>April 2021 </strong></span>frost damage in Bordeaux Area');
-    
+    '<span style=font-size:18px>Proportion of wine harvest impacted by the' +
+        '<span style="color:#388dc2; font-size: 18px;"><strong> April 2021 Frost </strong></span> in Bordeaux </span>');    
+      // '<span style="font-family: Geneva, Verdana, sans-serif;"> Proportion of wine harvest impacted by the<br><strong><span style="color:#388dc2; padding:1px 6px">April 2021frost damage in Bordeaux Area</span>');
+
   gauge
     .title()
     .useHtml(true)
@@ -97,7 +99,7 @@ html,body,
     from: 0,
     to: 30,
     position: 'inside',
-    fill: '#FFFF60 0.7',
+    fill: '#f7fbff 0.9',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -107,7 +109,7 @@ html,body,
     from: 30,
     to: 50,
     position: 'inside',
-    fill: '#FDC244 0.7',
+    fill: '#d0e7fb 0.9',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -117,7 +119,7 @@ html,body,
     from: 50,
     to: 80,
     position: 'inside',
-    fill: '#FF894C 0.7',
+    fill: '#388dc2 0.9',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -127,7 +129,7 @@ html,body,
     from: 80,
     to: 100,
     position: 'inside',
-    fill: '#EC4D4D 0.7',
+    fill: '#1c6cb1 0.9',
     startSize: 50,
     endSize: 50,
     radius: 98

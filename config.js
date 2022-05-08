@@ -205,6 +205,10 @@ var config = {
                                 {
                     layer: 'redWine',
                     opacity: 1,
+                },
+                {
+                    layer: 'whiteWine',
+                    opacity: 1,
                 }
             ],
             onChapterExit: [
@@ -214,7 +218,12 @@ var config = {
                 },
                 {
                     layer: 'bordeaux-pricing',
-                    opacity: 0,}
+                    opacity: 0,},
+                {
+                    layer: 'whiteWine',
+                    opacity: 0,
+                }
+
             ]
         },
         {
