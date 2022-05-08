@@ -116,7 +116,7 @@ var config = {
             id: 'shift',
             alignment: 'full',
             title: 'A glimpse into the "Old World"',
-            // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
+            image: 'https://images.unsplash.com/photo-1582675714475-cd5afa869ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3431&q=80',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
             location: {
                 // center: [17.96700, 28.25215],
@@ -229,7 +229,7 @@ var config = {
             id: 'CH2-3',
             alignment: 'left',
             title: 'Devastating frost events in Bordeaux in 2021',
-            image: '',
+            image: 'https://live.staticflickr.com/65535/33743215268_c33a98e1cb_b.jpg Scale model of the Eiffel tower in Parc Mini-France',
             description: 'Devastating frost has caused a 40% drop in the Bordeaux 2017 wine harvest and new estimates show the financial toll could reach 1.6 billion euros.The last two weeks in April brought extremely cold conditions of below 26°F and caused complete destruction at some wineries. <br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/gaugeChart.html"></iframe>',
             location: {
                 center: [-0.92355,45.16626],
@@ -334,7 +334,7 @@ var config = {
         },
         {
             id: 'CH3-2-California',
-            alignment: 'center',
+            alignment: 'full',
             title: 'The development of the wine industry in the US in last 20 years',
             image: '',
             description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.  <br></br><iframe title="Number of wineries in the U.S. 2019 (by State)" aria-label="Map" id="datawrapper-chart-fgS1S" src="https://datawrapper.dwcdn.net/fgS1S/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="546"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();',
