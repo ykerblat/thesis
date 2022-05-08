@@ -56,7 +56,7 @@
             /*opacity: 0;*/
     /* } */
     
-    #header {
+    /* #header {
             margin: auto;
             width: 100vw;
             height: 100vh;
@@ -68,6 +68,24 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        } */
+
+        #header {
+            margin: auto;
+            min-height: 100vh;
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            padding: 2vh 0vh 5vh 0vh;
+        }
+
+        #header h1 {
+            font-weight: 700;
+            text-transform: uppercase;
+            /* font-family: 'Merriweather', serif; */
+            text-align: left;
+            margin: auto;
+            max-width: 600px;
         }
         
         #header h1,
@@ -78,15 +96,15 @@
             text-align: center;
         }
 
-        #header h1 {
+        /* #header h1 {
             padding-top:25%;
             color:#b11226;
             font-size:96px;
   /*background-image: -linear-gradient(270deg, #85A051, #b11226);*/
   /*  background-image: linear-gradient(270deg, #8ac926, #c1121f);*/
   /*-webkit-background-clip: text;*/
-  /*-webkit-text-fill-color: transparent;*/
-        }
+  /* -webkit-text-fill-color: transparent; */ 
+        /* } */
         
         #footer {
             width: 100%;
@@ -242,6 +260,15 @@
         features.setAttribute('id', 'features');
 
         var header = document.createElement('div');
+        // This was added to template
+        features.setAttribute("id", "features");
+
+        // This was added to template
+        // if (config.topTitle) {
+        // var topTitle = document.createElement("div");
+        // topTitle.innerHTML = config.topTitle;
+        // header.appendChild(topTitle);
+        // }
 
         if (config.title) {
             var titleText = document.createElement('h1');
@@ -260,6 +287,12 @@
             bylineText.innerText = config.byline;
             header.appendChild(bylineText);
         }
+
+        if (config.description) {
+            var descriptionText = document.createElement("div");
+            descriptionText.innerHTML = config.description;
+            header.appendChild(descriptionText);
+            }
 
         if (header.innerText.length > 0) {
             header.classList.add(config.theme);

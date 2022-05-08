@@ -21,9 +21,10 @@ html,body,
 #container {
   width: 105%;
   height: 105%;
+  /* right:50px; */
+  left:0;
   margin: auto;
   padding: 0;
-  /* left: -10%; */
   background-color:#fbf2e3;
 }
 
@@ -54,7 +55,8 @@ html,body,
     .position('outside')
     .format('{%Value}%');
 
-  gauge.data([40]);
+  gauge
+    .data([40]);
   
   gauge
     .axis()
@@ -71,8 +73,8 @@ html,body,
     .ticks({ type: 'line', fill: 'white', length: 2 });
 
   gauge.title(
-    '<span style=font-size:18px>Proportion of wine harvest impacted by the' +
-        '<span style="color:#388dc2; font-size: 18px;"><strong> April 2021 Frost </strong></span> in Bordeaux </span>');    
+    '<span style=font-size:16px>Proportion of wine harvest impacted by the' +
+        '<span style="color:#388dc2; font-size: 16px;"><strong> April 2021 Frost </strong></span> in Bordeaux </span>');    
       // '<span style="font-family: Geneva, Verdana, sans-serif;"> Proportion of wine harvest impacted by the<br><strong><span style="color:#388dc2; padding:1px 6px">April 2021frost damage in Bordeaux Area</span>');
 
   gauge
@@ -81,13 +83,13 @@ html,body,
     .padding(0)
     .fontColor('#212121')
     .hAlign('center')
-    .margin([0, 0, 10, 0]);
+    .margin([0, 0,0, 0]);
 
   gauge
     .needle()
     .stroke('2.5 #545f69')
     .startRadius('5%')
-    .endRadius('90%')
+    .endRadius('95%')
     .startWidth('0.5%')
     .endWidth('0.1%')
     .middleWidth('0.2%');
@@ -99,7 +101,7 @@ html,body,
     from: 0,
     to: 30,
     position: 'inside',
-    fill: '#f7fbff 0.9',
+    fill: '#f7fbff 1',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -109,7 +111,7 @@ html,body,
     from: 30,
     to: 50,
     position: 'inside',
-    fill: '#d0e7fb 0.9',
+    fill: '#d0e7fb 1',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -119,7 +121,7 @@ html,body,
     from: 50,
     to: 80,
     position: 'inside',
-    fill: '#388dc2 0.9',
+    fill: '#388dc2 1',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -129,7 +131,7 @@ html,body,
     from: 80,
     to: 100,
     position: 'inside',
-    fill: '#1c6cb1 0.9',
+    fill: '#1c6cb1 1',
     startSize: 50,
     endSize: 50,
     radius: 98
@@ -165,10 +167,10 @@ html,body,
   gauge
     .label(4)
     .text('Catastrophic')
-    .fontColor('#212121')
-    .fontSize(14)
-    .offsetY('75%')
-    .offsetX(165)
+    .fontColor('212121')
+    .fontSize(13)
+    .offsetY('72%')
+    .offsetX(160)
     .anchor('center');
 
     var background = gauge.background();

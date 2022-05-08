@@ -1,25 +1,29 @@
-// let topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
+// const topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
-// let titleDiv =
-//   "<h1>The Geographical Distribution of Subway Usage Decrease Due to COVID-19</h1>";
+const titleDiv = "" ;
 
-// let bylineDiv = "<p>By Juan Francisco Saldarriaga and Michael Krisch</p>";
+const bylineDiv = "By Yann Kerblat";
 
-// let descriptionDiv =
+const descriptionDiv =
 //   '<p>This tutorial demonstrates how to use <a href="https://github.com/mapbox/storytelling">Mapbox Storytelling</a> with our previous web mapping example. Here we will use Mapbox storytelling template to first, give an overview of the decrease in subway usage around the city, and second, zoom into three different locations that exemplify the diversity of conditions around New York.</p>' +
 //   '<p>We will use the <a href="https://pointsunknown.nyc/web%20mapping/mapbox/2020/03/25/10_WebmappingTurnstileData.html">previous web map displaying MTA turnstile data</a> as the basis for our story. In this process we will use Mapbox GL JS, as well as Intersection Observer and Scrollama as our main JavaScript libraries.</p>' +
 //   "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In harum natus eos cum rem iure aperiam omnis distinctio illo quis, sunt nesciunt sint impedit deleniti dolor saepe necessitatibus eligendi aut?</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In harum natus eos cum rem iure aperiam omnis distinctio illo quis, sunt nesciunt sint impedit deleniti dolor saepe necessitatibus eligendi aut?</p>" +
-//   '<p style="text-align:center">Scroll to continue<br>▼</p>';
+//   '<p style="text-align:center">Scroll to continue<br>▼</p>'+
+'<iframe width="100%" height="1000" frameborder="0" scrolling="no" src="media/hero_video.html"></iframe>';
+
 
 
 var config = {
     style: 'mapbox://styles/kerby418/cl1mm4ra5000514p82p2zivs5',
     accessToken: 'pk.eyJ1Ijoia2VyYnk0MTgiLCJhIjoiY2t2bzdxNm11NnYyMTJwbXNhNmIwOGhyciJ9.mGHj7xqsXLDBmhU_WhRnSQ',
     showMarkers: false,
+    markerColor: "#3FB1CE",
     theme: 'dark',
-    title: 'Ripe for Disruption',
-    subtitle: 'Climate Change is shaping the future of the Wine Industry',
-    byline: 'May 2022',
+    topTitle:'',
+    title: titleDiv,
+    subtitle:'',
+    byline: bylineDiv,
+    description: descriptionDiv,
     footer: 'Data Visualization Thesis | Parsons School of Design | May 2022',
     chapters: [
         {
@@ -245,6 +249,10 @@ var config = {
                 {
                     layer: 'Bordeaux_frost',
                     opacity: 1,
+                },
+                {
+                    layer: 'redWine',
+                    opacity: 1
                 }
             ],
             onChapterExit: [
@@ -290,7 +298,7 @@ var config = {
             alignment: 'left',
             title: '',
             image: '',
-            description: '<iframe title=" California keeps boosting the US wine industry " aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/14/" scrolling="no" frameborder="0" style="border: none;" width="480" height="1093"></iframe>',
+            description: '<iframe title=" California keeps boosting the US wine industry " aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/14/" scrolling="no" frameborder="0" style="border: none;" width="500" height="1200"></iframe>',
             location: {
                 center: [-117.46270, 36.28082],
                 zoom: 4,
