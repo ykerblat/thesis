@@ -1,11 +1,10 @@
 <!-- Visual inspiration - https://codepen.io/guestn/pen/kGaxYP -->
 
-
 <!DOCTYPE html>
 
 <head>
     <meta charset="utf-8">
-    <title>Bubble Chart</title>
+    <title>Stream Graph</title>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script src= "https://d3js.org/d3-color.v1.min.js"></script> 
@@ -88,25 +87,27 @@
   border-top: 1px solid #666;
 }
 
-
+#cork{
+  z-index:10;
+  right: 200px;
+  bottom:-500px;
+  /* position:fixed; */
+}
 
     </style>
 
   </head>
 
 <body>
-
-<script src="https://d3js.org/d3.v6.js"></script>
-
-
-<svg width="112" height="125" viewBox="0 0 112 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path id="Vector" d="M55.5904 0.332764C56.7311 2.91848 59.0923 6.24297 62.4616 9.63438C67.237 14.4498 73.7634 19.5222 80.6347 23.9254C87.506 28.342 94.6956 32.1162 100.691 34.4182C103.689 35.5424 106.422 36.3186 108.571 36.6399C109.473 36.7737 110.269 36.8272 110.932 36.8005C105.042 27.7531 95.969 19.0377 85.8611 12.4075C75.9654 5.91641 65.1412 1.45966 55.5904 0.332764ZM50.7884 1.43825C39.7254 8.97858 35.9316 21.8643 33.4113 34.6323C35.5602 39.263 42.8029 47.0255 52.3272 53.9315C62.0372 60.9713 74.0552 67.3419 85.0917 70.0721C94.2446 67.7166 99.9751 63.0056 104.008 57.1971C107.297 52.4861 109.42 47.0255 111.091 41.6453C110.056 41.6721 108.969 41.565 107.854 41.4044C105.201 41.0297 102.23 40.1464 98.9934 38.9151C92.9977 36.6131 86.206 33.0798 79.547 28.9309L65.6187 41.8059L72.092 23.9254C67.237 20.4323 62.7535 16.7304 59.0923 13.0392C55.1924 9.12313 52.1149 5.30344 50.7884 1.43825ZM36.6479 46.9452L0.622843 90.1743L0.564478 90.2546C0.431828 90.3885 0.397339 90.4153 0.397339 90.7097C0.397339 91.0041 0.471623 91.5662 0.782024 92.3157C1.40548 93.8147 2.8832 95.9561 4.98703 98.2581C5.13825 98.4187 5.30008 98.606 5.45926 98.7666L12.625 92.6369L7.49411 100.828C11.6089 104.843 17.0953 109.206 22.8789 113.06C28.4767 116.808 34.3929 120.1 39.4866 122.242L49.515 103.156L46.3049 124.463C47.8967 124.811 49.2762 124.918 50.2578 124.838C51.8496 124.677 52.2741 124.356 52.619 123.473L52.6455 123.419L75.7797 72.2135C73.5512 71.3837 71.2961 70.4469 69.0676 69.403L61.8249 76.5231L64.9555 67.3954C59.4903 64.5581 54.2639 61.2657 49.5415 57.8395C44.5804 54.2527 40.1764 50.5588 36.6479 46.9452Z" fill="#A5846A"/>
-  </svg>
+  <script src="https://d3js.org/d3.v6.js"></script>
   
 
+
 <div id="frame">
-    
- 
+
+  <svg id="cork" width="2600" height="160" viewBox="0 0 112 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="Vector" d="M55.5904 0.332764C56.7311 2.91848 59.0923 6.24297 62.4616 9.63438C67.237 14.4498 73.7634 19.5222 80.6347 23.9254C87.506 28.342 94.6956 32.1162 100.691 34.4182C103.689 35.5424 106.422 36.3186 108.571 36.6399C109.473 36.7737 110.269 36.8272 110.932 36.8005C105.042 27.7531 95.969 19.0377 85.8611 12.4075C75.9654 5.91641 65.1412 1.45966 55.5904 0.332764ZM50.7884 1.43825C39.7254 8.97858 35.9316 21.8643 33.4113 34.6323C35.5602 39.263 42.8029 47.0255 52.3272 53.9315C62.0372 60.9713 74.0552 67.3419 85.0917 70.0721C94.2446 67.7166 99.9751 63.0056 104.008 57.1971C107.297 52.4861 109.42 47.0255 111.091 41.6453C110.056 41.6721 108.969 41.565 107.854 41.4044C105.201 41.0297 102.23 40.1464 98.9934 38.9151C92.9977 36.6131 86.206 33.0798 79.547 28.9309L65.6187 41.8059L72.092 23.9254C67.237 20.4323 62.7535 16.7304 59.0923 13.0392C55.1924 9.12313 52.1149 5.30344 50.7884 1.43825ZM36.6479 46.9452L0.622843 90.1743L0.564478 90.2546C0.431828 90.3885 0.397339 90.4153 0.397339 90.7097C0.397339 91.0041 0.471623 91.5662 0.782024 92.3157C1.40548 93.8147 2.8832 95.9561 4.98703 98.2581C5.13825 98.4187 5.30008 98.606 5.45926 98.7666L12.625 92.6369L7.49411 100.828C11.6089 104.843 17.0953 109.206 22.8789 113.06C28.4767 116.808 34.3929 120.1 39.4866 122.242L49.515 103.156L46.3049 124.463C47.8967 124.811 49.2762 124.918 50.2578 124.838C51.8496 124.677 52.2741 124.356 52.619 123.473L52.6455 123.419L75.7797 72.2135C73.5512 71.3837 71.2961 70.4469 69.0676 69.403L61.8249 76.5231L64.9555 67.3954C59.4903 64.5581 54.2639 61.2657 49.5415 57.8395C44.5804 54.2527 40.1764 50.5588 36.6479 46.9452Z" fill="#A5846A"/>
+    </svg>
 
   <div id="bottle">
       <div id="bottle4"></div>
@@ -124,13 +125,15 @@
 
 <div id="streamgraph"></div>  
 
+
+
 <script>
     /*global d3*/
 
 // set the dimensions and margins of the graph
-var margin = {top: 150, right: 20, bottom: 0, left: 480},
+var margin = {top: 150, right: 25, bottom: 0, left: 490},
     // width = 1000 - margin.left - margin.right,
-    width = 1050,
+    width = 1000,
     height = 600;
 
 // append the svg object to the body of the page
@@ -150,14 +153,25 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
   var keys = data.columns.slice(1)
 
   // Add X axis
+
+  const years = [1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020]
+  const yearsParser=d3.timeParse("%Y");
+  const yearsAccessor = d =>yearsParser(d.year)
+
   var x = d3.scaleLinear()
     .domain(d3.extent(data, function(d) { return d.year; }))
+    // .domain(d3.extent(data, yearsAccessor))
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height*0.8 + ")")
     // .call(d3.axisBottom(x).tickSize(-height*.7).tickValues([1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970,	1971, 1972, 1973,	1974, 1975,	1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983,	1984,	1985,	1986, 1987, 1988, 1989,	1990,	1991,	1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]))
-    .call(d3.axisBottom(x).tickValues([1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005,	2010, 2015, 2020]))
+        .classed('tick', true)
+    .call(d3.axisBottom(x)
+    .tickValues(years))
+        // .tickFormat(d3.format(years))
+    // .tickFormat(function(d,i){return ParseInt(d)})
     .style("font-size", "16px")
+    .attr("font-family", "sans-serif")
     .select(".domain").remove()
   // Customization
   svg.selectAll(".tick line")
@@ -171,18 +185,43 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
   //   .call(d3.axisBottom(xScale)
   //   .tickFormat(d3.format('d')));
   //   });
-  
+
 
   // Add X axis label:
   svg.append("text")
       .attr("text-anchor", "end")
-      .attr("x", width)
-      .attr("y", height-30 )
-      .text("Year")
-      .attr("font-family", function(d,i) {return i<5 ? "serif" : "sans-serif"; })
-      // .attr("font-family", roboto)
-      .style("font-size", 20);
+      .attr("x", width-1050)
+      .attr("y", height-100)
+      .text("(Year)")
+      // .attr("font-family", function(d,i) {return i<5 ? "serif" : "sans-serif"; })
+      .attr("font-family", "sans-serif")
+      .style("font-size", 17);
 
+      svg.append("text")
+      .attr("text-anchor", "end")
+      // .attr("transform", "rotate(-15)")
+      .attr("x", width-500)
+      .attr("y", height-30)
+      .attr("fill", "black")
+      .attr("z-index", 5)
+      .text("Quantity of wine produced per year in tonnes")
+      // .attr("font-family", function(d,i) {return i<5 ? "serif" : "sans-serif"; })
+      .attr("font-family", "sans-serif")
+      .style("font-size", 17);
+
+      svg.append("text")
+      .attr("text-anchor", "end")
+      // .attr("transform", "rotate(-15)")
+      .attr("x", width-50)
+      .attr("y", height-30)
+      .attr("z-index", 5)
+      .text(" Data Source: FAO")
+      // .attr("font-family", function(d,i) {return i<5 ? "serif" : "sans-serif"; })
+      .attr("font-family", "sans-serif")
+      .style("font-size", 17);
+
+      // .html("During the period of " + d.variable + ", the number of Ozone-attributable <br> Asthma Hospitalizations was: " 
+      // + d.measure + "<br> <em> Refers to Estimated Annual Rate for individuals 18 Yrs and Older (per 100,000 adults)")
 
   // Add Y axis
   var y = d3.scaleLinear()
@@ -197,7 +236,8 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
   // var color = d3.scaleOrdinal()
   //   .domain(keys)
   //   .range(d3.schemeSet1);
-    
+
+
   var color = d3.scaleOrdinal()
   .domain(keys)
   // .range(["#9E0142", "#DB494A", "#F88E53", "#FED281", "#FBF8B0", "#D5EE9F", "#89CFA5", "#4696B3", "#4E4381", "orange"])
@@ -217,12 +257,14 @@ const yearAccessor = d => d.data.year
   var Tooltip = svg
     .append("text")
     // .data(yearAccessor)
-    .attr("x", 0)
-    .attr("y", 0)
-    .attr("fill", "blue")
+    .attr("x", 200)
+    .attr("y", 100)
+    .attr("fill", "grey")
+    .attr("font-family", "Monospace")
+    // .attr("font-family", "Saira Semi Condensed")
     .style("opacity", 1)
-    .style("background-color", "red")
-    .style("font-size", 17)
+    // .style("background-color", "yellow")
+    .style("font-size", 22)
     // .text(d=>d)
     
     // backup Tooltip var
@@ -239,7 +281,7 @@ const yearAccessor = d => d.data.year
   // Three function that change the tooltip when user hover / move / leave a cell
   var mouseover = function(event, d) {
     Tooltip.style("opacity", 1)
-    d3.selectAll(".myArea").style("opacity", 0.4)
+    d3.selectAll(".myArea").style("opacity", 0.3)
     d3.select(this)
       .style("stroke", "red")
       .style("opacity", 1)
@@ -251,7 +293,7 @@ const yearAccessor = d => d.data.year
     Tooltip.text(grp)
   }
   var mouseleave = function(event, d) {
-    Tooltip.style("opacity", 1)
+    Tooltip.style("opacity", 0)
     d3.selectAll(".myArea").style("opacity", 1).style("stroke", "none")
    }
 
