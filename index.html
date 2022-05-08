@@ -40,7 +40,7 @@
             /* position:sticky; */
         }
     
-    #stream {
+         #stream {
             margin: auto;
             width:  100vw;
             height: 100vh;
@@ -76,7 +76,7 @@
             width: 100%;
             position: relative;
             z-index: 5;
-            padding: 2vh 0vh 5vh 0vh;
+            /* padding: 2vh 0vh 5vh 0vh; */
         }
 
         #header h1 {
@@ -92,7 +92,7 @@
         #header h2,
         #header p {
             margin: 0;
-            padding: 2vh 2vw;
+            /* padding: 2vh 2vw; */
             text-align: center;
         }
 
@@ -263,12 +263,13 @@
         // This was added to template
         features.setAttribute("id", "features");
 
+        if (config.description) {
+            var descriptionText = document.createElement("div");
+            descriptionText.innerHTML = config.description;
+            header.appendChild(descriptionText);
+            }
+
         // This was added to template
-        // if (config.topTitle) {
-        // var topTitle = document.createElement("div");
-        // topTitle.innerHTML = config.topTitle;
-        // header.appendChild(topTitle);
-        // }
 
         if (config.title) {
             var titleText = document.createElement('h1');
@@ -287,12 +288,6 @@
             bylineText.innerText = config.byline;
             header.appendChild(bylineText);
         }
-
-        if (config.description) {
-            var descriptionText = document.createElement("div");
-            descriptionText.innerHTML = config.description;
-            header.appendChild(descriptionText);
-            }
 
         if (header.innerText.length > 0) {
             header.classList.add(config.theme);
