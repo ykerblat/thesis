@@ -186,7 +186,7 @@ var config = {
             alignment: 'left',
             title: 'The Bordeaux wine region has some of the most expensive vineyard domains in Europe',
             image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id. <iframe width="80%" height="500" frameborder="0" scrolling="no" src="charts/glassHands.html"></iframe>',
             location: {
                 center: [-0.90492, 44.58133],
                 zoom: 8.30,
@@ -194,7 +194,7 @@ var config = {
                 bearing: -36.80
             },
             mapAnimation: "flyTo",
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: "",
             onChapterEnter: [
                 {
@@ -230,7 +230,7 @@ var config = {
             alignment: 'left',
             title: 'Devastating frost events in Bordeaux in 2021',
             image: '',
-            description: 'Devastating frost has caused a 40% drop in the Bordeaux 2017 wine harvest and new estimates show the financial toll could reach 1.6 billion euros.The last two weeks in April brought extremely cold conditions of below 26°F and caused complete destruction at some wineries. <br> <iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/gaugeChart.html"></iframe>',
+            description: 'Devastating frost has caused a 40% drop in the Bordeaux 2017 wine harvest and new estimates show the financial toll could reach 1.6 billion euros.The last two weeks in April brought extremely cold conditions of below 26°F and caused complete destruction at some wineries. <br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/gaugeChart.html"></iframe>',
             location: {
                 center: [-0.92355,45.16626],
                 zoom: 8.50,
