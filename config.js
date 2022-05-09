@@ -53,7 +53,7 @@ var config = {
         },
         
         {
-            id: 'bubble',
+            id: 'largeChart',
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             image: '',
@@ -82,8 +82,8 @@ var config = {
             ]
         },
         {
-            id: 'stream',
-            alignment: 'center',
+            id: 'largeChart',
+            alignment: 'full',
             title: '"New World" countries have been challenging norms in the wine industry',
             image: '',
             description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. Leading wine producers in the New World have multiplied by 4 their wine production during this time peiod. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
@@ -442,46 +442,13 @@ var config = {
                 }
             ]
         },
-
-        {
-            id: 'shiftA',
-            alignment: 'full',
-            title: 'TRANSITION - Shifting to California',
-            // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
-            description: '',
-            // '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
-            // 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<br></br>',
-            location: {
-                center: [-0.94343, 44.99235],
-                zoom: 9.56,
-                pitch: 60.00,
-                bearing: -26.22
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [
-                {
-                    // layer: 'whiteWine',
-                    // opacity: 0,
-                }
-            ],
-            onChapterExit: [
-                                {
-                    // layer: 'whiteWine',
-                    // opacity: 0,
-                    // layer: 'redWine',
-                    // opacity: 0
-                }
-            ]
-        },
         
                 {
-            id: 'ShiftC',
-            alignment: 'full',
-            title: 'Emerging practices in adaptive practices',
-            image: 'https://www.frontiersin.org/files/Articles/607859/fpls-11-607859-HTML/image_m/fpls-11-607859-g003.jpg',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id. <br>',
+            id: 'largeChart',
+            alignment: 'fully',
+            title: 'Emerging practices and other forward-looking trends',
+            image: '',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/radialTree.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
@@ -513,8 +480,5 @@ var config = {
                 }
             ]
         },
-
-
-
     ]
 };
