@@ -1,11 +1,11 @@
 // const topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
 const descriptionDiv =
-'<iframe width="100%" height="1000" frameborder="0" scrolling="no" src="media/hero_video.html"></iframe>';
+'<iframe width="100%" height="1100" frameborder="0" scrolling="no" src="media/hero_video.html"></iframe>';
 
 const titleDiv = "" ;
 
-const bylineDiv = "(DRAFT VERSION)";
+const bylineDiv = "MS Data Visualization Thesis | Parsons School of Design | May 2022";
 
 
 var config = {
@@ -57,7 +57,7 @@ var config = {
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             image: '',
-            description: 'The wine industry is thriving and we have never consumed so much wine previously.Today, half of the world’s wine exports come from two countries, France and Italy and 3/4 wines come from Europe but the New World has also been growing very fast. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
+            description: 'The wine industry is thriving and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but the New World has also been expanding very quickly. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -84,9 +84,9 @@ var config = {
         {
             id: 'stream',
             alignment: 'center',
-            title: 'The "New World" has challenged norms in the wine industry in the last 60 years.',
+            title: '"New World" countries have been challenging norms in the wine industry',
             image: '',
-            description: 'During the final three decades of the 20th century, the internationalisation of wine production and consumption has identified.<iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
+            description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. Leading wine producers in the New World have multiplied by 4 their wine production during this time peiod. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -94,7 +94,7 @@ var config = {
                 bearing: 0.00
             },
             mapAnimation: "flyTo",
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: "",
             onChapterEnter: [
                 {
@@ -150,7 +150,7 @@ var config = {
             alignment: 'left',
             title: 'A close look at the wine industry in France',
             image: '',
-            description: 'Over recent years, wines from the Bordeaux region were the most popular premium wine option among French consumers: an estimated 16.3 million people consumed AOC wines from the Bordeaux region. Côte du rhône wine had the second highest number of users, with 12.6 million users. <br></br> <iframe title=" France Wine Consumption in 2015-20 (by region) " aria-label="Split Bars" id="datawrapper-chart-Spd9I" src="https://datawrapper.dwcdn.net/Spd9I/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="410"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>',
+            description: 'Over recent years, wines from the Bordeaux region were the most popular premium wine option among French consumers: an estimated 16.3 million people consumed AOC wines from the Bordeaux region. <br></br> <iframe title=" France Wine Consumption in 2015-20 (by region) " aria-label="Split Bars" id="datawrapper-chart-Spd9I" src="https://datawrapper.dwcdn.net/Spd9I/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="410"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>',
             location: {
                 center: [-0.57058, 45.88270],
                 zoom: 6.00,
