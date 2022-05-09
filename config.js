@@ -216,7 +216,7 @@ var config = {
                     opacity: 0,
                 }
             ]
-        }
+        },
          {
             id: 'CH2-2',
             alignment: 'left',
