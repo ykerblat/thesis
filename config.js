@@ -184,6 +184,7 @@ var config = {
         {
             id: '',
             alignment: '',
+            hidden:true,
             title: '',
             image: '',
             description: '',
