@@ -423,7 +423,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'CA_fire',
-                    opacity: 0.5,
+                    opacity: 0.7,
                     
                 },
                                  {
