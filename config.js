@@ -1,7 +1,7 @@
 // const topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
 const descriptionDiv =
-'<iframe width="100%" height="1100" frameborder="0" scrolling="no" src="media/hero_video.html"></iframe>';
+'<iframe width="100%" height="1100" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
 
 const titleDiv = "" ;
 
@@ -351,11 +351,19 @@ var config = {
                 {
                     layer: 'whiteWine',
                     opacity: 1
+                },
+                {
+                    layer: 'redWine',
+                    opacity: 1
                 }
             ],
             onChapterExit: [
                                 {
                     layer: 'whiteWine',
+                    opacity: 0
+                },
+                {
+                    layer: 'redWine',
                     opacity: 0
                 }
             ]
