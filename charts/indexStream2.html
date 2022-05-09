@@ -1,0 +1,291 @@
+<!-- Visual inspiration - https://codepen.io/guestn/pen/kGaxYP -->
+
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bubble Chart</title>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src= "https://d3js.org/d3-color.v1.min.js"></script> 
+    <script src= "https://d3js.org/d3-interpolate.v1.min.js"></script> 
+    <script src= "https://d3js.org/d3-scale-chromatic.v1.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+      div {position:absolute;}
+
+#frame {width: 1500px; height:1000px; 
+  margin: 50px; 
+  /* overflow:hidden;  */
+  /* border: 1px solid #ccc;  */
+}
+
+#bottle { 
+    top: 195px; left:450px;
+    -webkit-transform : rotate(20deg) scale(1.2); 
+}
+
+  #bottle1 {
+    width: 400px;
+    height:129px;
+    right:220px;
+    background: green;
+    border-top: 1px solid #222; 
+    border-bottom: 80px solid #040;
+    box-shadow: 0px -35px 0px 0px #090 inset, 0px 25px 0px 0px #0b0 inset;
+
+  }
+  #bottle2 {
+    width: 140px;
+    height:208px;
+    right: 150px;
+    border-radius: 50%;
+    background: green;
+    box-shadow: 0px -35px 0px 1px #040 inset, 0px 25px 0px 0px #0b0 inset;
+    border: 1px solid #222;
+  }
+
+  #bottle3 {
+    width: 10px;
+    height:70px;
+    right: 0px;
+    top: 70px;
+    border-radius: 35px 0 0 35px;
+    background: green;
+  }
+
+  #bottle4 {
+    top: 5px; right:24px;
+    border-left: 130px solid green;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    height: 40px;
+    width: 100px;
+  }
+
+#capsule { top: 105px; right:5px;
+}
+  #capsule-top {
+    width: 25px; height: 80px; top: -40px; right:0px;
+    background: #222;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px 1px #555 inset;
+  }
+
+  #capsule-bottom {
+      width: 120px; height: 72px; background: #222; top: -36px; right:25px;
+    box-shadow: 0px 5px 0px 1px #555 inset;
+  }
+
+#label {
+  width: 200px; height: 102px; right:260px; top: 105px;
+  background: #ccc;
+  box-shadow: -20px -25px 50px 0px #444 inset;
+  border-bottom: 2px solid #777;
+  border-top: 1px solid #666;
+}
+
+
+
+    </style>
+
+  </head>
+
+<body>
+
+<script src="https://d3js.org/d3.v6.js"></script>
+
+
+<svg width="112" height="125" viewBox="0 0 112 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="Vector" d="M55.5904 0.332764C56.7311 2.91848 59.0923 6.24297 62.4616 9.63438C67.237 14.4498 73.7634 19.5222 80.6347 23.9254C87.506 28.342 94.6956 32.1162 100.691 34.4182C103.689 35.5424 106.422 36.3186 108.571 36.6399C109.473 36.7737 110.269 36.8272 110.932 36.8005C105.042 27.7531 95.969 19.0377 85.8611 12.4075C75.9654 5.91641 65.1412 1.45966 55.5904 0.332764ZM50.7884 1.43825C39.7254 8.97858 35.9316 21.8643 33.4113 34.6323C35.5602 39.263 42.8029 47.0255 52.3272 53.9315C62.0372 60.9713 74.0552 67.3419 85.0917 70.0721C94.2446 67.7166 99.9751 63.0056 104.008 57.1971C107.297 52.4861 109.42 47.0255 111.091 41.6453C110.056 41.6721 108.969 41.565 107.854 41.4044C105.201 41.0297 102.23 40.1464 98.9934 38.9151C92.9977 36.6131 86.206 33.0798 79.547 28.9309L65.6187 41.8059L72.092 23.9254C67.237 20.4323 62.7535 16.7304 59.0923 13.0392C55.1924 9.12313 52.1149 5.30344 50.7884 1.43825ZM36.6479 46.9452L0.622843 90.1743L0.564478 90.2546C0.431828 90.3885 0.397339 90.4153 0.397339 90.7097C0.397339 91.0041 0.471623 91.5662 0.782024 92.3157C1.40548 93.8147 2.8832 95.9561 4.98703 98.2581C5.13825 98.4187 5.30008 98.606 5.45926 98.7666L12.625 92.6369L7.49411 100.828C11.6089 104.843 17.0953 109.206 22.8789 113.06C28.4767 116.808 34.3929 120.1 39.4866 122.242L49.515 103.156L46.3049 124.463C47.8967 124.811 49.2762 124.918 50.2578 124.838C51.8496 124.677 52.2741 124.356 52.619 123.473L52.6455 123.419L75.7797 72.2135C73.5512 71.3837 71.2961 70.4469 69.0676 69.403L61.8249 76.5231L64.9555 67.3954C59.4903 64.5581 54.2639 61.2657 49.5415 57.8395C44.5804 54.2527 40.1764 50.5588 36.6479 46.9452Z" fill="#A5846A"/>
+  </svg>
+  
+
+<div id="frame">
+    
+ 
+
+  <div id="bottle">
+      <div id="bottle4"></div>
+      <div id="bottle2"></div>
+      <div id="bottle1"></div>
+      <div id="bottle3"></div>
+      <div id="capsule">
+        <div id="capsule-top"></div>
+        <div id="capsule-bottom"></div> 
+      </div>
+      <div id="label"></div>
+    </div>
+    
+  </div>
+
+<div id="streamgraph"></div>  
+
+<script>
+    /*global d3*/
+
+// set the dimensions and margins of the graph
+var margin = {top: 150, right: 20, bottom: 0, left: 480},
+    // width = 1000 - margin.left - margin.right,
+    width = 1050,
+    height = 600;
+
+// append the svg object to the body of the page
+var svg = d3.select("#streamgraph")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .attr("transform", "rotate(15)")
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Parse the Data
+d3.csv("../dataset/streamChart.csv").then( function(data) {
+
+  // List of groups = header of the csv files
+  var keys = data.columns.slice(1)
+
+  // Add X axis
+  var x = d3.scaleLinear()
+    .domain(d3.extent(data, function(d) { return d.year; }))
+    .range([ 0, width ]);
+  svg.append("g")
+    .attr("transform", "translate(0," + height*0.8 + ")")
+    // .call(d3.axisBottom(x).tickSize(-height*.7).tickValues([1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970,	1971, 1972, 1973,	1974, 1975,	1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983,	1984,	1985,	1986, 1987, 1988, 1989,	1990,	1991,	1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]))
+    .call(d3.axisBottom(x).tickValues([1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005,	2010, 2015, 2020]))
+    .style("font-size", "16px")
+    .select(".domain").remove()
+  // Customization
+  svg.selectAll(".tick line")
+  .attr("stroke", "#b8b8b8")
+
+
+  // svg.append('g')
+  //   .attr('transform', 'translate(50, 638)')
+  //   .attr('id', 'x-axis')
+  //   .classed('tick', true)
+  //   .call(d3.axisBottom(xScale)
+  //   .tickFormat(d3.format('d')));
+  //   });
+  
+
+  // Add X axis label:
+  svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", width)
+      .attr("y", height-30 )
+      .text("Year")
+      .attr("font-family", function(d,i) {return i<5 ? "serif" : "sans-serif"; })
+      // .attr("font-family", roboto)
+      .style("font-size", 20);
+
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([-30000000, 30000000])
+    .range([ height, 0 ]);
+
+  // color palette
+  // var color = d3.scaleOrdinal()
+  //   .domain(keys)
+  //   .range(d3.schemeDark2);
+
+  // var color = d3.scaleOrdinal()
+  //   .domain(keys)
+  //   .range(d3.schemeSet1);
+    
+  var color = d3.scaleOrdinal()
+  .domain(keys)
+  // .range(["#9E0142", "#DB494A", "#F88E53", "#FED281", "#FBF8B0", "#D5EE9F", "#89CFA5", "#4696B3", "#4E4381", "orange"])
+  .range(["#ffb096", "#ff594a", "#a70206", "#ff6f5b", "#be0017", "#ff846f", "#d72728", "#ff9a83", "#ee4138"])
+
+
+  //stack the data?
+  var stackedData = d3.stack()
+    .offset(d3.stackOffsetSilhouette)
+    .keys(keys)
+    (data)
+
+    // from Yang
+// const yearAccessor = d => d.data.year
+
+  // create a tooltip
+  var Tooltip = svg
+    .append("text")
+    // .data(yearAccessor)
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("fill", "blue")
+    .style("opacity", 1)
+    .style("background-color", "red")
+    .style("font-size", 17)
+    // .text(d=>d)
+    
+    // backup Tooltip var
+    // var Tooltip = svg
+  //   .append("text")
+  //   .attr("x", 100)
+  //   .attr("y", 300)
+  //   .attr("fill", "blue")
+  //   .style("opacity", 1)
+  //   .style("background-color", "red")
+  //   .style("font-size", 17)
+
+  console.log(Tooltip)
+  // Three function that change the tooltip when user hover / move / leave a cell
+  const mouseover = function(event, d) {
+    Tooltip.style("opacity", 1)
+    d3.selectAll(".myArea").style("opacity", 0.4)
+    d3.select(this)
+      .style("stroke", "red")
+      .style("opacity", 1)
+  }
+  const mousemove = function(event, d,i) {
+    grp=d.key 
+    console.log(d)
+    // grp = keys[i]
+    Tooltip.text(grp)
+  }
+  const mouseleave = function(event, d) {
+    Tooltip.style("opacity", 1)
+    d3.selectAll(".myArea").style("opacity", 1).style("stroke", "none")
+   }
+
+  // Area generator
+  var area = d3.area()
+    .x(function(d) { return x(d.data.year); })
+    .y0(function(d) { return y(d[0]); })
+    .y1(function(d) { return y(d[1]); })
+    .curve(d3.curveMonotoneX);
+
+  // Show the areas
+  svg
+    .selectAll("mylayers")
+    .data(stackedData)
+    .enter()
+    .append("path")
+      .attr("class", "myArea")
+      // .style("fill", function(d) { console.log(d); return color(d.key); })
+      .style("fill", function(d) {return color(d.key); })
+      .attr("d", area)
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove)
+      .on("mouseleave", mouseleave)
+
+})
+
+// const yearAccessor = d => d.data.year
+
+// .selectAll("text")
+//         .data(yearAccessor)
+//         .join("text")
+
+//         .text(d=>d)
+
+</script>        
+</body>
+</html>    
