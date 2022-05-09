@@ -166,7 +166,7 @@ var config = {
                     opacity: 1,
                 },
                 {
-                    layer: 'france-dept',
+                    layer: 'france-dept-all',
                     opacity: 0.5,
                 }
             ],
@@ -176,11 +176,47 @@ var config = {
                     opacity: 0,
                 },
                 {
-                    layer: 'france-dept',
+                    layer: 'france-dept-all',
                     opacity: 0,
                 }
             ]
         },
+        {
+            id: 'repeat-TEST',
+            alignment: 'left',
+            title: 'TEST-A close look at the wine industry in France',
+            image: '',
+            description: 'Over recent years, wines from the Bordeaux region were the most popular premium wine option among French consumers: an estimated 16.3 million people consumed AOC wines from the Bordeaux region. <br></br> <iframe title=" France Wine Consumption in 2015-20 (by region) " aria-label="Split Bars" id="datawrapper-chart-Spd9I" src="https://datawrapper.dwcdn.net/Spd9I/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="410"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>',
+            location: {
+                center: [-0.57058, 45.88270],
+                zoom: 6.00,
+                pitch: 48.50,
+                bearing: 1.60
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                {
+                    layer: 'France_AOC_highZoom',
+                    opacity: 1,
+                },
+                {
+                    layer: 'france-gironde',
+                    opacity: 0.5,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'France_AOC_highZoom',
+                    opacity: 0,
+                },
+                {
+                    layer: 'france-gironde',
+                    opacity: 0,
+                }
+            ]
+        }
          {
             id: 'CH2-2',
             alignment: 'left',
