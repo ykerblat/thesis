@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8' />
     <title>Wine & Climate Change Nexus</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=yes' />
     <script ='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Koulen&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Koulen&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
     
     <style>
         
@@ -40,15 +40,6 @@
             /* position:sticky; */
         }
     
-         #largeChart {
-            margin: auto;
-            width:  100vw;
-            height: 100vh;
-            position: relative;
-            /* color:white; */
-            transition: transform .5s;
-    }
-    
     
     /* #header {
             margin: auto;
@@ -63,6 +54,17 @@
             background-repeat: no-repeat;
             background-size: cover;
         } */
+
+
+                /* #header h1 {
+            padding-top:25%;
+            color:#b11226;
+            font-size:96px;
+            /*background-image: -linear-gradient(270deg, #85A051, #b11226);*/
+            /*  background-image: linear-gradient(270deg, #8ac926, #c1121f);*/
+            /*-webkit-background-clip: text;*/
+            /* -webkit-text-fill-color: transparent; */ 
+                    /* } */
 
         #header {
             margin: auto;
@@ -90,16 +92,28 @@
             text-align: center;
         }
 
-        /* #header h1 {
-            padding-top:25%;
-            color:#b11226;
-            font-size:96px;
-  /*background-image: -linear-gradient(270deg, #85A051, #b11226);*/
-  /*  background-image: linear-gradient(270deg, #8ac926, #c1121f);*/
-  /*-webkit-background-clip: text;*/
-  /* -webkit-text-fill-color: transparent; */ 
-        /* } */
+        #features {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+
+        #features p {
+            font-size:16px;
+        }
+
+        #features h2 {
+            font-size:22px;
+        }
         
+        #largeChart {
+            margin: auto;
+            width:  100vw;
+            height: 100vh;
+            position: relative;
+            /* color:white; */
+            transition: transform .5s;
+    }
+
         #footer {
             width: 100%;
             min-height: 5vh;
@@ -110,11 +124,6 @@
             font-size: 13px;
             position: relative;
             z-index: 5;
-        }
-
-        #features {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
         }
 
         .hidden {
@@ -139,6 +148,12 @@
         .fully {
             width: 100%;
             margin: auto;
+        }
+
+        .fully h2{
+            font-size: 96px;
+            font-weight: 900;
+            text-align: center;
         }
 
         .light {
