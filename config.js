@@ -22,12 +22,12 @@ var config = {
     footer: 'Designed and coded by Yann Kerblat as part of the MS Data Visualization Thesis | Parsons School of Design | NYC | May 2022',
     chapters: [
         {
-            id: 'globalWine',
+            id: 'Ch1',
             alignment: 'center',
             hidden:false,
-            title: 'Climate change is pushing the boundaries of the wine industry. (PENDING)',
+            title: 'Climate change is pushing the boundaries of the wine industry.',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
-            description: 'Today, climate change is forcing winemakers to move further from the Equator. A recent study reckons that the northern frontier of vine cultivation in Europe could advance by 20-60km each decade between now and 2050. So how did we get it here?',
+            description: 'Today, climate change is forcing winemakers to move further from the Equator. Recent studies show that the northern frontier of vine cultivation in Europe could advance by 20-60km each decade between now and 2050 while others predict the rise of whole new wine regions. So how did we get it here?',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -111,9 +111,9 @@ var config = {
         },
         
                 {
-            id: 'shift',
+            id: 'Shift',
             alignment: 'full',
-            title: '72hours of damaging frost, 1 entire year of harvest at risk',
+            title: 'Bordeaux - 72hours of damaging frost, 1 entire year of harvest at risk',
             image: 'https://images.unsplash.com/photo-1582675714475-cd5afa869ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3431&q=80',
             description: '',
             location: {
@@ -291,15 +291,15 @@ var config = {
         {
             id: 'shiftA',
             alignment: 'full',
-            title: 'Chapter 2: Dark clouds with ... notes of smoke and ashes?',
+            title: 'California - Dark clouds with ... notes of smoke and ashes?',
             image: 'https://images.unsplash.com/photo-1547084266-7501a964bf9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3542&q=80',
             description: '',
             // '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
             location: {
-                center: [-0.94343, 44.99235],
-                zoom: 9.56,
-                pitch: 60.00,
-                bearing: -26.22
+                // center: [-0.94343, 44.99235],
+                // zoom: 9.56,
+                // pitch: 60.00,
+                // bearing: -26.22
             },
             mapAnimation: "flyTo",
             rotateAnimation: false,
@@ -322,9 +322,9 @@ var config = {
         {
             id: 'US-wine',
             alignment: 'left',
-            title: '',
+            title: 'The rapid growth of the US wine industry',
             image: '',
-            description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020. <iframe title=" California continues to boosting the US wine industry " aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/14/" scrolling="yes" frameborder="0" style="border: none;" width="500" height="1200"></iframe>',
+            description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.<br><br><iframe title=" California continues to boosting the US wine industry " aria-label="Range Plot" id="datawrapper-chart-HammB" src="https://datawrapper.dwcdn.net/HammB/14/" scrolling="yes" frameborder="0" style="border: none;" width="500" height="1200"></iframe>',
             location: {
                 center: [-117.46270, 36.28082],
                 zoom: 4,
@@ -438,6 +438,40 @@ var config = {
             ]
         },
         
+        {
+            id: 'Shift',
+            alignment: 'full',
+            title: 'The future of wine - future opportunities and different constraints',
+            image: 'https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
+            description: '',
+            location: {
+                // center: [17.96700, 28.25215],
+                // zoom: 1.73,
+                // pitch: 0.00,
+                // bearing: 0.00
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                {
+                    layer: 'whiteWine',
+                    opacity: 0,
+                    layer: 'redWine',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'whiteWine',
+                    opacity: 0,
+                    layer: 'redWine',
+                    opacity: 0
+                }
+            ]
+        },
+       
+
                 {
             id: 'largeChart',
             alignment: 'fully',
