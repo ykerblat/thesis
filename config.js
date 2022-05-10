@@ -23,10 +23,10 @@ var config = {
     chapters: [
         {
             id: 'globalWine',
-            alignment: 'full',
+            alignment: 'center',
             hidden:false,
             title: 'Climate change is pushing the boundaries of the wine industry. (PENDING)',
-            image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
+            // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
             description: 'Today, climate change is forcing winemakers to move further from the Equator. A recent study reckons that the northern frontier of vine cultivation in Europe could advance by 20-60km each decade between now and 2050. So how did we get it here?',
             location: {
                 center: [17.96700, 28.25215],
@@ -40,14 +40,14 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.7,
+                    opacity: 0.8,
                     
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0,
+                    opacity: 0.5,
                 }
             ]
         },
@@ -70,14 +70,14 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0,
+                    opacity: 0.5,
                     
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0,
+                    opacity: 0.5,
                 }
             ]
         },
@@ -98,19 +98,17 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
-                    layer: 'whiteWine',
-                    opacity: 0,
+                    layer: 'wineRegions',
+                    opacity: 0.5,
                 }
             ],
             onChapterExit: [
                                 {
-                    layer: 'whiteWine',
+                    layer: 'wineRegions',
                     opacity: 0,
                 }
             ]
         },
-        
-
         
                 {
             id: 'shift',
@@ -129,17 +127,17 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
-                    // layer: 'whiteWine',
+                    layer: 'whiteWine',
                     opacity: 0,
-                    // layer: 'redWine',
+                    layer: 'redWine',
                     opacity: 0
                 }
             ],
             onChapterExit: [
                                 {
-                    // layer: 'whiteWine',
+                    layer: 'whiteWine',
                     opacity: 0,
-                    // layer: 'redWine',
+                    layer: 'redWine',
                     opacity: 0
                 }
             ]
@@ -282,10 +280,6 @@ var config = {
                     layer: 'Bordeaux_frost',
                     opacity: 1,
                 },
-                {
-                    layer: 'redWine',
-                    opacity: 1
-                }
             ],
             onChapterExit: [
                                 {
@@ -365,7 +359,7 @@ var config = {
                 },
                 {
                     layer: 'CA_boundary',
-                    opacity: 0.3,
+                    opacity: 0,
                 }
             ]
         },
