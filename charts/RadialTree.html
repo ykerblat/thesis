@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Future of Wine</title>
-  <!-- <link rel="stylesheet" href="./style.css"> -->
 
 <style>
   .node {
@@ -127,7 +126,7 @@
 };
   
 
-var diameter = window.innerWidth;
+var diameter = 1400;
 
 var margin = {top: 0, right: 400, bottom: 0, left: 400},
     width = diameter,
@@ -138,7 +137,7 @@ var i = 0,
     root;
 
 var tree = d3.layout.tree()
-    .size([360, diameter - 10])
+    .size([360, diameter - 1])
     .separation(function(a, b) { return (a.parent == b.parent ? 1 : 7) / a.depth; });
 
 var diagonal = d3.svg.diagonal.radial()
@@ -166,7 +165,7 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 100; });
+  nodes.forEach(function(d) { d.y = d.depth * 90; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -183,11 +182,11 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "red" : "#fff"; });
 
   nodeEnter.append("text")
-      .attr("dx", "-2.5em")
-      .attr("y", -10)
-      .attr("dy", "-1em")
+      .attr("dx", "1em")
+      .attr("y", 1.5)
+      .attr("dy", "1em")
       .attr("text-anchor", "start")
-      //.attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length * 8.5)  + ")"; })
+      .attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length * 8.5)  + ")"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 
@@ -197,7 +196,7 @@ function update(source) {
       .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
 
   nodeUpdate.select("circle")
-      .attr("r", 8)
+      .attr("r", 10)
       .style("fill", function(d) { return d._children ? "gold" : "#fff"; });
 
   nodeUpdate.select("text")
