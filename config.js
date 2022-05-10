@@ -40,14 +40,14 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0,
+                    opacity: 1,
                     
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.0,
+                    opacity: 0,
                 }
             ]
         },
@@ -428,11 +428,11 @@ var config = {
                 },
                                  {
                      layer: 'CA_vineyard',
-                     opacity: 1,
+                     opacity: 1
                  },
                                                   {
                      layer: 'CA_boundary',
-                     opacity: 0,
+                     opacity: 0
                  },
             ],
             onChapterExit: [
@@ -445,11 +445,10 @@ var config = {
         
                 {
             id: 'largeChart',
-            alignment: 'full',
+            alignment: 'fully',
             title: 'Emerging practices and other forward-looking trends',
             image: '',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>,',
-            // <iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
@@ -460,24 +459,15 @@ var config = {
             rotateAnimation: false,
             callback: "",
             onChapterEnter: [
-                {
-                    layer: '',
-                    opacity: 0.8,
-                    
-                },
                                  {
                      layer: 'wineRegions',
-                     opacity: 1,
-                 },
-                                                  {
-                     layer: '',
-                     opacity: 0.3,
+                     opacity: 0.7
                  },
             ],
             onChapterExit: [
                                 {
                      layer: 'wineRegions',
-                    opacity: 0
+                    opacity: 1
                 }
             ]
         },
