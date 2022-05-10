@@ -40,7 +40,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 1,
+                    opacity: 0.7,
                     
                 }
             ],
@@ -370,11 +370,11 @@ var config = {
             ]
         },
         {
-            id: 'CH3-2-California',
-            alignment: 'full',
+            id: 'largeChart',
+            alignment: 'fully',
             title: 'The development of the wine industry in the US in last 20 years',
             image: '',
-            description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.  <br></br><iframe title="Number of wineries in the U.S. 2019 (by State)" aria-label="Map" id="datawrapper-chart-fgS1S" src="https://datawrapper.dwcdn.net/fgS1S/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="546"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();',
+            description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.  <br></br><iframe title="Number of wineries in the U.S. 2019 (by State)" aria-label="Map" id="datawrapper-chart-fgS1S" src="https://datawrapper.dwcdn.net/fgS1S/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1000"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();',
             location: {
                 center: [-82.73387, 38.03087],
                 zoom: 3.64,
@@ -387,21 +387,21 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'whiteWine',
-                    opacity: 1
+                    opacity: 1,
                 },
                 {
                     layer: 'redWine',
-                    opacity: 1
+                    opacity: 1,
                 }
             ],
             onChapterExit: [
                                 {
                     layer: 'whiteWine',
-                    opacity: 0
+                    opacity: 0,
                 },
                 {
                     layer: 'redWine',
-                    opacity: 0
+                    opacity: 0,
                 }
             ]
         },
@@ -428,17 +428,17 @@ var config = {
                 },
                                  {
                      layer: 'CA_vineyard',
-                     opacity: 1
+                     opacity: 1,
                  },
                                                   {
                      layer: 'CA_boundary',
-                     opacity: 0
+                     opacity: 0,
                  },
             ],
             onChapterExit: [
                                 {
                     layer: 'CA_fire',
-                    opacity: 0
+                    opacity: 0,
                 }
             ]
         },
@@ -467,9 +467,38 @@ var config = {
             onChapterExit: [
                                 {
                      layer: 'wineRegions',
-                    opacity: 1
+                    opacity: 0.7
                 }
             ]
         },
+        {
+            id: 'final part',
+            alignment: 'fully', 
+            hidden:true,
+            title: 'Emerging practices and other forward-looking trends',
+            image: '',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo. A scelerisque purus semper eget duis at. Id diam maecenas ultricies mi eget mauris pharetra et. Amet facilisis magna etiam tempor. Aliquet lectus proin nibh nisl. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Leo duis ut diam quam nulla. Tellus in hac habitasse platea dictumst vestibulum. Amet porttitor eget dolor morbi non arcu risus quis. Neque laoreet suspendisse interdum consectetur libero id.<iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>',
+            location: {
+                center: [28.08454, 15.01111],
+                zoom: 1.89,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                                 {
+                     layer: 'wineRegions',
+                     opacity: 0.7,
+                 },
+            ],
+            onChapterExit: [
+                                {
+                     layer: 'wineRegions',
+                    opacity: 0.5,
+                }
+            ]
+        }
     ]
 };
