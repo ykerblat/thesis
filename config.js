@@ -331,7 +331,7 @@ var config = {
                 pitch: 0,
                 bearing:0
             },
-            mapAnimation: "jumpTo",
+            mapAnimation: "flyTo",
             rotateAnimation: false,
             callback: "",
             onChapterEnter: [
