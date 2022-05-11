@@ -1,7 +1,7 @@
 // const topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
 const descriptionDiv =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="media/hero_video.html"></iframe>';
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
 
 const titleDiv = "" ;
 
@@ -470,15 +470,13 @@ var config = {
                 }
             ]
         },
-       
-
                 {
             id: 'largeChart',
             alignment: 'fully',
             hidden:false,
             title: 'Emerging practices and other forward-looking trends',
             image: '',
-            description: '<iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>',
+            description: '<iframe width="100%" height="1200px" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
