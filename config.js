@@ -1,7 +1,7 @@
 // const topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
 const descriptionDiv =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="media/hero_video.html"></iframe>';
 
 const titleDiv = "" ;
 
@@ -475,6 +475,7 @@ var config = {
                 {
             id: 'largeChart',
             alignment: 'fully',
+            hidden:false,
             title: 'Emerging practices and other forward-looking trends',
             image: '',
             description: '<iframe width="100%" height="100%" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>',
@@ -501,12 +502,12 @@ var config = {
             ]
         },
         {
-            id: 'final part',
+            id: 'final_part',
             alignment: 'fully', 
-            hidden:true,
-            title: 'Emerging practices and other forward-looking trends',
+            hidden:false,
+            title: 'Content placement',
             image: '',
-            description: '',
+            description: '<img class="wineLabelGIF" src="./src/wineLabel.gif" alt="wine flapping label">',
             location: {
                 center: [28.08454, 15.01111],
                 zoom: 1.89,
@@ -519,7 +520,7 @@ var config = {
             onChapterEnter: [
                                  {
                      layer: 'wineRegions',
-                     opacity: 0.3,
+                     opacity: 0.7,
                  },
             ],
             onChapterExit: [
