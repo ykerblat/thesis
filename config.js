@@ -19,7 +19,7 @@ var config = {
     subtitle:'',
     byline: bylineDiv,
     description: descriptionDiv,
-    footer: 'Designed and coded by Yann Kerblat as part of the MS Data Visualization Thesis | Parsons School of Design | NYC | May 2022',
+    footer: 'Designed and coded by Yann Kerblat <br> MS Data Visualization Thesis | Parsons School of Design <br> May 2022',
     chapters: [
         {
             id: 'Ch1',
@@ -57,7 +57,7 @@ var config = {
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             image: '',
-            description: 'The wine industry is thriving and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but the New World has also been expanding very quickly. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
+            description: 'The wine industry is thriving and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but the New World has also been expanding very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -77,7 +77,7 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.5,
+                    opacity: 0,
                 }
             ]
         },
@@ -86,7 +86,7 @@ var config = {
             alignment: 'full',
             title: '"New World" countries have been challenging norms in the wine industry',
             image: '',
-            description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. Leading wine producers in the New World have multiplied by 4 their wine production during this time peiod. <iframe width="100%" height="1000" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
+            description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. Leading wine producers in the New World have multiplied by 4 their wine production during this time peiod. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -99,7 +99,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.5,
+                    opacity: 0,
                 }
             ],
             onChapterExit: [
@@ -114,8 +114,8 @@ var config = {
             id: 'Shift',
             alignment: 'full',
             title: 'Bordeaux - 72hours of damaging frost, 1 entire year of harvest at risk',
-            image: 'https://images.unsplash.com/photo-1582675714475-cd5afa869ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3431&q=80',
-            description: '',
+            image: '',
+            description: '<img src=https://images.unsplash.com/photo-1582675714475-cd5afa869ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3431&q=80 style=height:100vh>',
             location: {
                 // center: [17.96700, 28.25215],
                 // zoom: 1.73,
@@ -442,8 +442,8 @@ var config = {
             id: 'Shift',
             alignment: 'full',
             title: 'The future of wine - future opportunities and different constraints',
-            image: 'https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
-            description: '',
+            // image: 'https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
+            description: '<img src="https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80" style=height:100vh>',
             location: {
                 // center: [17.96700, 28.25215],
                 // zoom: 1.73,
