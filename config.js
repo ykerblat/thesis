@@ -345,7 +345,7 @@ var config = {
                 },
                {
                 layer: 'CA_boundary',
-                opacity: 0.5,
+                opacity: 0.1,
             } 
             ],
             onChapterExit: [
