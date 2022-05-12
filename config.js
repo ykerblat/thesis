@@ -403,9 +403,9 @@ var config = {
         {
             id: 'CH3-31',
             alignment: 'right',
-            title: 'TEST 2 Devastating wildfires have also impacted vineyards in California in recent years',
+            title: 'Economic impact of California Wine Industry',
             image: '',
-            description: 'In California in 2020, more than 4 million acres burned. In wine country, according to the Santa Rosa-based Press Democrat, in the past six years there were 23 major fires totaling nearly 1.5 million acres, “the equivalent of 130% of Sonoma County.”<br></br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/contourPlot.html"></iframe>',
+            description: 'California wine industry employs 786,000 Americans and Generates $114 BILLION in annual economic activity. <br> <br> In fact 3 bottles out of 5 that are sold across in the US at any time are from California.',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
@@ -420,6 +420,10 @@ var config = {
                      layer: 'CA_vineyard',
                      opacity: 1,
                  },
+                 {
+                    layer: 'AVA-USA',
+                    opacity: 1,
+                },
                                                   {
                      layer: 'CA_boundary',
                      opacity: 0.1,
@@ -436,9 +440,9 @@ var config = {
         {
             id: 'CH3-3-California',
             alignment: 'right',
-            title: 'Devastating wildfires have also impacted vineyards in California in recent years',
+            title: 'Devastating wildfires have been increasingly impacting vineyards across California in recent years',
             image: '',
-            description: 'In California in 2020, more than 4 million acres burned. In wine country, according to the Santa Rosa-based Press Democrat, in the past six years there were 23 major fires totaling nearly 1.5 million acres, “the equivalent of 130% of Sonoma County.”<br></br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/contourPlot.html"></iframe>',
+            description: 'In wine country, according to the Santa Rosa-based Press Democrat, in the past six years there were 23 major fires totaling nearly 1.5 million acres, “the equivalent of 130% of Sonoma County.”<br></br><br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/contourPlot.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
@@ -473,9 +477,9 @@ var config = {
         {
         id: 'final_California',
         alignment: 'right',
-        title: '',
+        title: 'In 2020, more than 4 million acres burned,  moving even closer to vineyards.',
         image: '',
-        description: 'In California in 2020, more than 4 million acres burned. In wine country, according to the Santa Rosa-based Press Democrat, in the past six years there were 23 major fires totaling nearly 1.5 million acres, “the equivalent of 130% of Sonoma County.”<br></br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/contourPlot.html"></iframe>',
+        description: '<img src=https://static01.nyt.com/images/2020/10/07/dining/05pour1/merlin_177967395_d1cd4594-a1ac-40d1-ab27-4bca1d945123-superJumbo.jpg?quality=75&auto=webp>',
         location: {
             center: [-115.67532, 37.77697],
             zoom: 5.83,
@@ -511,7 +515,7 @@ var config = {
         {
             id: 'Shift',
             alignment: 'full',
-            title: 'The future of wine - future opportunities and different constraints',
+            title: 'The future of wine - future opportunities and new parameters',
             // image: 'https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
             description: '<img src="https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80" style=height:100vh>',
             location: {
