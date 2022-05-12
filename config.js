@@ -401,6 +401,39 @@ var config = {
         //     ]
         // },
         {
+            id: 'CH3-31',
+            alignment: 'right',
+            title: 'TEST 2 Devastating wildfires have also impacted vineyards in California in recent years',
+            image: '',
+            description: 'In California in 2020, more than 4 million acres burned. In wine country, according to the Santa Rosa-based Press Democrat, in the past six years there were 23 major fires totaling nearly 1.5 million acres, “the equivalent of 130% of Sonoma County.”<br></br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/contourPlot.html"></iframe>',
+            location: {
+                center: [-115.67532, 37.77697],
+                zoom: 5.83,
+                pitch: 0.00,
+                bearing: -2.40
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                                 {
+                     layer: 'CA_vineyard',
+                     opacity: 1,
+                 },
+                                                  {
+                     layer: 'CA_boundary',
+                     opacity: 0.1,
+                 },
+            ],
+            onChapterExit: [
+                                {
+                    layer: '',
+                    opacity:'',
+                }
+            ]
+        },
+        
+        {
             id: 'CH3-3-California',
             alignment: 'right',
             title: 'Devastating wildfires have also impacted vineyards in California in recent years',
@@ -417,8 +450,8 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
-                    layer: 'CA_fire',
-                    opacity: 0.7,
+                    layer: 'CA_firepre2020',
+                    opacity: 1,
                     
                 },
                                  {
@@ -432,11 +465,48 @@ var config = {
             ],
             onChapterExit: [
                                 {
-                    layer: 'CA_fire',
-                    opacity: 0,
+                    layer: 'CA_firepre2020',
+                    opacity:0.1,
                 }
             ]
         },
+        {
+        id: 'final_California',
+        alignment: 'right',
+        title: '',
+        image: '',
+        description: 'In California in 2020, more than 4 million acres burned. In wine country, according to the Santa Rosa-based Press Democrat, in the past six years there were 23 major fires totaling nearly 1.5 million acres, “the equivalent of 130% of Sonoma County.”<br></br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/contourPlot.html"></iframe>',
+        location: {
+            center: [-115.67532, 37.77697],
+            zoom: 5.83,
+            pitch: 0.00,
+            bearing: -2.40
+        },
+        mapAnimation: "flyTo",
+        rotateAnimation: false,
+        callback: "",
+        onChapterEnter: [
+            {
+                layer: 'CA_fire2020',
+                opacity: 1,
+                
+            },
+                             {
+                 layer: 'CA_vineyard',
+                 opacity: 1,
+             },
+                                              {
+                 layer: 'CA_boundary',
+                 opacity: 0,
+             },
+        ],
+        onChapterExit: [
+                            {
+                layer: 'CA_firepre2020',
+                opacity: 0,
+            }
+        ]
+    },
         
         {
             id: 'Shift',
@@ -503,7 +573,7 @@ var config = {
             id: 'final_part',
             alignment: 'fully', 
             hidden:false,
-            title: 'Content placement',
+            title: 'What is the climate story of your wine?',
             image: '',
             description: '<img class="wineLabelGIF" src="./src/wineLabel.gif" alt="wine flapping label">',
             location: {
