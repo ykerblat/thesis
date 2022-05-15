@@ -57,7 +57,7 @@ var config = {
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             image: '',
-            description: 'The wine industry is thriving and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but the New World has also been expanding very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
+            description: 'The wine industry is thriving and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but other regions have also been expanding very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -84,9 +84,9 @@ var config = {
         {
             id: 'largeChart',
             alignment: 'full',
-            title: '"New World" countries have been challenging norms in the wine industry',
+            title: 'Outside of Europe, more recent wine-making countries have been challenging norms in the wine industry',
             image: '',
-            description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. Leading wine producers in the New World have multiplied by 4 their wine production during this time peiod. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
+            description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. <br> Leading wine producers outside of Europe have multiplied by 4 their wine production during this time period. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
