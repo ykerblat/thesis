@@ -165,46 +165,16 @@ d3.csv("../dataset/streamChart.csv").then( function(data) {
     .attr("transform", "translate(0," + height*0.8 + ")")
         .classed('tick', true)
     .call(d3.axisBottom(x)
-      .tickValues(years))
+    .tickFormat(d => yearsParser(d).getFullYear()))
+      // .tickValues(years))
     .style("font-size", "16px")
     .attr("opacity",0.5)
     .attr("font-family", "sans-serif")
     .select(".domain").remove()
+
   // Customization
   svg.selectAll(".tick line")
   .attr("stroke", "#b8b8b8")
-
-
-  // test :) 
-  // const years = [1960, 1965, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020]
-  // const yearsParser=d3.timeParse("%Y");
-  // const yearsAccessor = d =>yearsParser(d.year)
-
-  // var x = d3.scaleTime()
-  //   .domain(d3.extent(data, yearsAccessor))
-  //   .range([ 0, width ]);
-  // svg.append("g")
-  //   .attr("transform", "translate(0," + height*0.8 + ")")
-  //       .classed('tick', true)
-  //   .call(d3.axisBottom(x))
-  //   // .scale(x)
-  //   // .tickValues(years))
-  //   .style("font-size", "16px")
-  //   .attr("opacity",0.5)
-  //   .attr("font-family", "sans-serif")
-  //   .select(".domain").remove()
-  // // Customization
-  // svg.selectAll(".tick line")
-  // .attr("stroke", "#b8b8b8")
-
-
-  // svg.append('g')
-  //   .attr('transform', 'translate(50, 638)')
-  //   .attr('id', 'x-axis')
-  //   .classed('tick', true)
-  //   .call(d3.axisBottom(xScale)
-  //   .tickFormat(d3.format('d')));
-  //   });
 
 
   // Add X axis label:
