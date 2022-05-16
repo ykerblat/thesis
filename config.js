@@ -33,7 +33,7 @@ var config = {
             hidden:false,
             title: 'Climate change is pushing the boundaries of the wine industry.',
             // image: 'https://www.liquor.com/thmb/EBxO0NeYyIK_IqEG-knYC-f-DTw=/720x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wine-map-climate-change_main_720x720-a9c90acf96464dd98effe0b1d78d2274.gif',
-            description: 'Today, climate change is forcing winemakers to move further from the Equator. Recent studies show that the northern frontier of vine cultivation in Europe could advance by 20-60km each decade between now and 2050 while others predict the rise of whole new wine regions. So how did we get it here?',
+            description: 'Today, climate change is forcing winemakers to move further from the Equator. <br>Recent studies show that the northern frontier of vine cultivation in Europe could advance by 20-60km each decade between now and 2050 while others predict the rise of whole new wine regions.',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -46,14 +46,14 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'WineRisk_classification',
-                    opacity: 0.8,
+                    opacity: 1,
                     
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'WineRisk_classification',
-                    opacity: 0.5,
+                    opacity: 1,
                 }
             ]
         },
@@ -76,7 +76,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0.5,
+                    opacity: 0.8,
                     
                 }
             ],
