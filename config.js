@@ -64,7 +64,7 @@ var config = {
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             image: '',
-            description: 'The wine industry is in full expansion and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but other regions have been catching up very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
+            description: 'The wine industry is in full expansion and we have never consumed so much wine from different places. <br> Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but other regions have been catching up very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
@@ -91,7 +91,7 @@ var config = {
         {
             id: 'largeChart',
             alignment: 'full',
-            title: 'Outside of Europe, more recent wine-making countries have been challenging norms in the wine industry',
+            title: 'Outside of Europe, "younger" wine-making countries have been challenging norms in the wine industry',
             image: '',
             description: 'During the final three decades of the 20th century, the globalization of wine production and its consumption has intensified. <br> Leading wine producers outside of Europe have multiplied by 4 their wine production during this time period. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/indexStreamGraph.html"></iframe>',
             location: {
@@ -552,7 +552,7 @@ var config = {
             hidden:false,
             title: 'Emerging practices and other forward-looking trends',
             image: '',
-            description: 'Some preliminary indications to map out how the wine industry will adapt to climate, and what consumers could expect as a result. <br> <iframe width="100%" height="1400px" frameborder="0" scrolling="yes" src="charts/layoutTree.html"></iframe>',
+            description: 'Some preliminary indications to map out how the wine industry will adapt to climate, and what consumers could expect as a result. <br> <iframe width="100%" height="1000px" frameborder="0" scrolling="yes" src="charts/layoutTree.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
@@ -565,13 +565,13 @@ var config = {
             onChapterEnter: [
                                  {
                      layer: 'wineRegions',
-                     opacity: 0.7
+                     opacity: 0,
                  },
             ],
             onChapterExit: [
                                 {
                      layer: 'wineRegions',
-                    opacity: 0.7
+                    opacity: 0.8,
                 }
             ]
         },
@@ -594,13 +594,13 @@ var config = {
             onChapterEnter: [
                                  {
                      layer: 'wineRegions',
-                     opacity: 0.7,
+                     opacity: 0,
                  },
             ],
             onChapterExit: [
                                 {
                      layer: 'wineRegions',
-                    opacity: 0.8,
+                    opacity: 0,
                 }
             ]
         }
