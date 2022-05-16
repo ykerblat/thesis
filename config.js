@@ -552,7 +552,7 @@ var config = {
             hidden:false,
             title: 'Emerging practices and other forward-looking trends',
             image: '',
-            description: 'Some preliminary indications to map out how the wine industry will adapt to climate, and what consumers could expect as a result. <br> <iframe width="100%" height="1000px" frameborder="0" scrolling="yes" src="charts/layoutTree.html"></iframe>',
+            description: 'Some preliminary indications to map out how the wine industry will adapt to climate, and what consumers could expect as a result. <br> <iframe width="100%" height="1000px" frameborder="0" scrolling="no" src="charts/layoutTree.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
