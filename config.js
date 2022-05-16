@@ -45,15 +45,15 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
-                    layer: 'WineRisk_classification',
+                    layer: 'WineRisk',
                     opacity: 1,
                     
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'WineRisk_classification',
-                    opacity: 1,
+                    layer: 'WineRisk',
+                    opacity: 0,
                 }
             ]
         },
