@@ -1,4 +1,3 @@
-// const topTitleDiv = "<h4>Points Unknown | Tutorial 10 | Mapbox Storytelling</h4>";
 
 const descriptionDiv =
 '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
@@ -6,6 +5,13 @@ const descriptionDiv =
 const titleDiv = "" ;
 
 const bylineDiv = "Data Visualization Final Project | Parsons School of Design | May 2022";
+
+const descriptionDiv2 =
+"<h2>Forced to work and take the subway</h3>" +
+'<img src="images/Chapter_2_Image.jpg">';
+
+const descriptionDiv3 =
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
 
 
 var config = {
@@ -113,9 +119,9 @@ var config = {
                 {
             id: 'Shift',
             alignment: 'full',
-            title: 'Bordeaux - 72hours of damaging frost, 1 entire year of harvest at risk',
+            title: '',
             image: '',
-            description: '<img src=https://images.unsplash.com/photo-1582675714475-cd5afa869ba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3431&q=80 style=height:100vh>',
+            description: descriptionDiv2,
             location: {
                 // center: [17.96700, 28.25215],
                 // zoom: 1.73,
@@ -291,10 +297,9 @@ var config = {
         {
             id: 'shiftA',
             alignment: 'full',
-            title: 'California - Dark clouds with ... notes of smoke and ashes?',
-            image: 'https://images.unsplash.com/photo-1547084266-7501a964bf9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3542&q=80',
-            description: '',
-            // '<br><iframe width="100%" height="1200" frameborder="0" scrolling="no" src="media/videoCA.html"></iframe>',
+            // title: 'California - Dark clouds with ... notes of smoke and ashes?',
+            image: '',
+            description: descriptionDiv3,
             location: {
                 // center: [-0.94343, 44.99235],
                 // zoom: 9.56,
@@ -405,7 +410,7 @@ var config = {
             alignment: 'right',
             title: 'Economic impact of California Wine Industry',
             image: '',
-            description: 'California wine industry employs 786,000 Americans and Generates $114 BILLION in annual economic activity. <br> <br> In fact 3 bottles out of 5 that are sold across in the US at any time are from California.',
+            description: 'California wine industry employs 786,000 Americans and generates $114 billion in annual economic activity. <br><br> In fact 3 bottles out of 5 that are sold across in the US at any time are from California.<br><img src="img/CA_bottles.svg">',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,
@@ -420,10 +425,6 @@ var config = {
                      layer: 'CA_vineyard',
                      opacity: 1,
                  },
-                 {
-                    layer: 'AVA-USA',
-                    opacity: 1,
-                },
                                                   {
                      layer: 'CA_boundary',
                      opacity: 0.1,
@@ -477,7 +478,7 @@ var config = {
         {
         id: 'final_California',
         alignment: 'right',
-        title: 'In 2020, more than 4 million acres burned,  moving even closer to vineyards.',
+        title: 'In 2020, more than 4 million acres burned, moving even closer to vineyards.',
         image: '',
         description: '<img src=https://static01.nyt.com/images/2020/10/07/dining/05pour1/merlin_177967395_d1cd4594-a1ac-40d1-ab27-4bca1d945123-superJumbo.jpg?quality=75&auto=webp>',
         location: {
@@ -550,7 +551,7 @@ var config = {
             hidden:false,
             title: 'Emerging practices and other forward-looking trends',
             image: '',
-            description: '<iframe width="100%" height="1200px" frameborder="0" scrolling="yes" src="charts/RadialTree.html"></iframe>',
+            description: 'Some preliminary indications to map out how the wine industry will adapt to climate, and what consumers could expect as a result. <br> <iframe width="100%" height="1400px" frameborder="0" scrolling="yes" src="charts/layoutTree.html"></iframe>',
             location: {
                 center: [-115.67532, 37.77697],
                 zoom: 5.83,

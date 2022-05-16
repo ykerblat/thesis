@@ -2,66 +2,95 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Future of Wine</title>
+  <title>CodePen - D3 layout tree</title>
 
 <style>
-  .node {
-  cursor: pointer;
+  #body {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #0E0;
+  stroke-width: 1.5px;
+}
+
+/* .string, .regexp { */
+  /* color: #f39; */
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #777;
+  font-style: oblique;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+
+a:link, a:visited {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
 }
 
 .node circle {
-  fill: greenyellow;
-  stroke: green;
-  stroke-width: 2px;
+  cursor: pointer;
+  fill: #fff;
+  stroke:green;
+  stroke-width: 1.5px;
 }
 
 .node text {
-  font: 14px sans-serif;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.link {
-  fill: #fbf2e3;
-  stroke: brown;
-  stroke-width: 2px;
+path.link {
+  fill: none;
+  stroke:#8b0000;
+  stroke-width: 1px;
 }
 </style>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.10/d3.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js"></script> -->
 
-<div id="tree"></div>  
+<div id="body">
+</div>
+<!-- partial -->
 
+</body>
 
 <script>
-  var pubs =
-{
-    "name": "WHAT DOES THE FUTURE OF WINE LOOK LIKE?",
+  var json_data = 
+  {
+    "name":"TOMORROW",
     "children": [
-        {
-            "name": "CONSUMERS","children": [
-                {"name": "TASTING","children": [
-                    {"name": "More variety in flavors and aromas?"},
-                    {"name": "Higher alcohol level on average?"},
-                    {"name": "More natural wines become available?"}
-                ]},
-                {"name": "BUYING","children": [
-                  {"name": "More marketing around lower alcohol content options?"}, 
-                  {"name": "Recurring supply chain issues?"}, 
-                  {"name": "Higher pricing per unit due to shifting supply flows?"},       
-                  {"name": "More eco-friendly packaging to encourage circular economy?"}
-                ]},
-                {"name": "EXPLORING","children": [
-                    {"name": "Increase in organic/sustainability certification processes?"},
-                    {"name": "New wine tourism destinations?"},  
-                    {"name": "Unusual new wine regions become more mainstream?"},    
-                    {"name": "Less wine waste, more wine-based products?"}
-                ]},
-            ]
-        },
         {
             "name": "WINEMAKERS","children": [
                 {"name": "SHORT-TERM TECHNIQUES","children": [
@@ -95,7 +124,7 @@
                 [    
                     {"name": "SCIENTIFIC TOOLS","children":[
                         {"name": "Plant Material", "children":[
-                                          {"name": "Drought-tolerant grape variety"},
+                                          {"name": "Drought-tolerant grape variety", "color": "green"},
                                           {"name": "Drought-tolerant rootstock"},
                                           {"name": "Late Ripening Variety"},
                         ]},
@@ -125,94 +154,132 @@
                 ]}
             ]
         },
+
+        {"name": "CONSUMERS",
+    "children": [
+        {
+            "name": "","children": [
+                {"name": "TASTING","children": [
+                    {"name": "More variety in flavors and aromas?"},
+                    {"name": "Higher alcohol level on average?"},
+                    {"name": "More natural wines become available?"}
+                ]},
+                {"name": "BUYING","children": [
+                  {"name": "More marketing around lower alcohol content options?"}, 
+                  {"name": "Recurring supply chain issues?"}, 
+                  {"name": "Higher pricing per unit due to shifting supply flows?"},       
+                  {"name": "More eco-friendly packaging to encourage circular economy?"}
+                ]},
+                {"name": "EXPLORING","children": [
+                    {"name": "Increase in organic/sustainability certification processes?"},
+                    {"name": "New wine tourism destinations?"},  
+                    {"name": "Unusual new wine regions become more mainstream?"},    
+                    {"name": "Less wine waste, more wine-based products?"}
+                ]},
+            ]
+        },
+    ]}
     ]
 };
-  
 
-var diameter = 1000;
-
-var margin = {top: 0, right: 300, bottom: 300, left: 300},
-    width = diameter,
-    height = diameter;
-
-    var svg = d3.select("#tree")
-    .append("svg")
-    .attr("width", width )
-    .attr("height", height )
-    // .attr("viewBox", "0, 0, 1200, 1200")
-  .append("g")
-    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
-    
-var i = 0,
-    duration = 1500,
+var m = [100, 100, 100, 150],
+    w = 1480 - m[1] - m[4],
+    h = 1000 - m[0] - m[2],
+    i = 0,
     root;
 
 var tree = d3.layout.tree()
-    .size([360, diameter - 1])
-    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 7) / a.depth; });
+    .size([h, w]);
 
-var diagonal = d3.svg.diagonal.radial()
-    .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
 
+var vis = d3.select("#body").append("svg:svg")
+    .attr("width", w + m[1] + m[4])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-root = pubs;
-root.x0 = 0;
+root = json_data;
+root.x0 = h / 2;
 root.y0 = 0;
 
-// root.children.forEach(collapse); // start with all children collapsed
-update(root);
+function toggleAll(d) {
+  if (d.children) {
+    d.children.forEach(toggleAll);
+    toggle(d);
+  }
+}
 
-// d3.select(self.frameElement).style("height", "800px");
+  // Initialize the display to show a few nodes.
+  root.children.forEach(toggleAll);
+  // toggle(root.children[1]);
+  // toggle(root.children[1].children[2]);
+  // toggle(root.children[9]);
+  // toggle(root.children[9].children[0]);
+
+ update(root);
+
 
 function update(source) {
+  var duration = d3.event && d3.event.altKey ? 5000 : 2500;
 
   // Compute the new tree layout.
-  var nodes = tree.nodes(root),
-      links = tree.links(nodes);
+  var nodes = tree.nodes(root).reverse();
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 60; });
+  nodes.forEach(function(d) { d.y = d.depth * 200; });
 
   // Update the nodes…
-  var node = svg.selectAll("g.node")
+  var node = vis.selectAll("g.node")
       .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
   // Enter any new nodes at the parent's previous position.
-  var nodeEnter = node.enter().append("g")
+  var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
-      //.attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
-      .on("click", click);
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", function(d) { toggle(d); update(d); });
 
-  nodeEnter.append("circle")
+  nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
-      .style("fill", function(d) { return d._children ? "red" : "#fff"; });
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
-  nodeEnter.append("text")
-      .attr("dx", "1em")
-      .attr("y", 1.5)
-      .attr("dy", "1em")
-      .attr("text-anchor", "start")
-      .attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length * 8.5)  + ")"; })
+  nodeEnter.append('a')
+      .attr('xlink:href', function(d) {
+        return d.url;
+      })
+      .append("svg:text")
+      .attr("x", function(d) { return d.children || d._children ? -20 : 20; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
+      .style('fill', function(d) {
+        return d.free ? 'black' : '#999';
+      })
       .style("fill-opacity", 1e-6);
+
+  nodeEnter.append("svg:title")
+    .text(function(d) {
+      return d.description;
+    });
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
       .duration(duration)
-      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeUpdate.select("circle")
-      .attr("r", 10)
-      .style("fill", function(d) { return d._children ? "gold" : "#fff"; });
+      .attr("r", 6)
+      .style("fill", function(d) { return d._children ? d.color : d.color; });
+      // .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeUpdate.select("text")
-      .style("fill-opacity", 1)
-      .attr("transform", function(d) { return d.x < 180 ? "translate(0)" : "rotate(180)translate(-" + (d.name.length + 100)  + ")"; });
+      .style("fill-opacity", 1);
 
-  // TODO: appropriate transform
+  // Transition exiting nodes to the parent's new position.
   var nodeExit = node.exit().transition()
       .duration(duration)
-      //.attr("transform", function(d) { return "diagonal(" + source.y + "," + source.x + ")"; })
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
       .remove();
 
   nodeExit.select("circle")
@@ -222,16 +289,19 @@ function update(source) {
       .style("fill-opacity", 1e-6);
 
   // Update the links…
-  var link = svg.selectAll("path.link")
-      .data(links, function(d) { return d.target.id; });
+  var link = vis.selectAll("path.link")
+      .data(tree.links(nodes), function(d) { return d.target.id; });
 
   // Enter any new links at the parent's previous position.
-  link.enter().insert("path", "g")
+  link.enter().insert("svg:path", "g")
       .attr("class", "link")
       .attr("d", function(d) {
         var o = {x: source.x0, y: source.y0};
         return diagonal({source: o, target: o});
-      });
+      })
+    .transition()
+      .duration(duration)
+      .attr("d", diagonal);
 
   // Transition links to their new position.
   link.transition()
@@ -254,8 +324,8 @@ function update(source) {
   });
 }
 
-// Toggle children on click.
-function click(d) {
+// Toggle children.
+function toggle(d) {
   if (d.children) {
     d._children = d.children;
     d.children = null;
@@ -263,22 +333,6 @@ function click(d) {
     d.children = d._children;
     d._children = null;
   }
-  
-  update(d);
-}
-
-// Collapse nodes
-function collapse(d) {
-  if (d.children) {
-      d._children = d.children;
-      d._children.forEach(collapse);
-      d.children = null;
-    }
 }
 </script>
-
-<!-- partial -->
-  <!-- <script  src="./script.js"></script> -->
-
-</body>
 </html>
