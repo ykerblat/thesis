@@ -7,7 +7,7 @@ const titleDiv = "" ;
 const bylineDiv = "Data Visualization Final Project | Parsons School of Design | May 2022";
 
 const descriptionDiv2 =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="Transition/transition2.html"></iframe>';
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition/transition2.html"></iframe>';
 
 const descriptionDiv3 =
 '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition/transition3.html"></iframe>';
@@ -508,7 +508,7 @@ var config = {
         ],
         onChapterExit: [
                             {
-                layer: 'CA_firepre2020',
+                layer: 'CA_fire2020',
                 opacity: 0,
             }
         ]
