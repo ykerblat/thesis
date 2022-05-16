@@ -9,9 +9,11 @@ const bylineDiv = "Data Visualization Final Project | Parsons School of Design |
 const descriptionDiv2 =
 '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition2.html"></iframe>';
 
-// const descriptionDiv3 =
-// '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
+const descriptionDiv3 =
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition3.html"></iframe>';
 
+const descriptionDiv4 =
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition4.html"></iframe>';
 
 var config = {
     style: 'mapbox://styles/kerby418/cl1mm4ra5000514p82p2zivs5',
@@ -104,7 +106,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'wineRegions',
-                    opacity: 0,
+                    opacity: 1,
                 }
             ],
             onChapterExit: [
@@ -120,7 +122,7 @@ var config = {
             alignment: 'full',
             title: '',
             image: '',
-            description: descriptionDiv,
+            description: descriptionDiv2,
             location: {
                 // center: [17.96700, 28.25215],
                 // zoom: 1.73,
@@ -294,7 +296,7 @@ var config = {
             ]
         },
         {
-            id: 'shiftA',
+            id: 'shift',
             alignment: 'full',
             // title: 'California - Dark clouds with ... notes of smoke and ashes?',
             image: '',
@@ -515,9 +517,9 @@ var config = {
         {
             id: 'Shift',
             alignment: 'full',
-            title: 'The future of wine - future opportunities and new parameters',
-            // image: 'https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
-            description: '<img src="https://images.unsplash.com/photo-1545649329-221ac078a795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80" style=height:100vh>',
+            title: '',
+            image: '',
+            description: descriptionDiv4,
             location: {
                 // center: [17.96700, 28.25215],
                 // zoom: 1.73,
@@ -577,9 +579,9 @@ var config = {
             id: 'final_part',
             alignment: 'fully', 
             hidden:false,
-            title: 'What is the climate story of your wine?',
+            title: 'Wine and its climate story',
             image: '',
-            description: '<img class="wineLabelGIF" src="./src/wineLabel.gif" alt="wine flapping label">',
+            description: 'Next time you take a close look at that label on a wine bottle, ask yourself: what is the climate story behind? <img class="wineLabelGIF" src="./src/wineLabel.gif" >',
             location: {
                 center: [28.08454, 15.01111],
                 zoom: 1.89,

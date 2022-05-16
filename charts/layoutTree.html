@@ -91,7 +91,31 @@ path.link {
   {
     "name":"TOMORROW",
     "children": [
+        {"name": "CONSUMERS",
+    "children": [
         {
+            "name": "","children": [
+                {"name": "TASTING","children": [
+                    {"name": "More variety in flavors and aromas?"},
+                    {"name": "Higher alcohol level on average?"},
+                    {"name": "More natural wines become available?"}
+                ]},
+                {"name": "BUYING","children": [
+                  {"name": "More marketing around lower alcohol content options?"}, 
+                  {"name": "Recurring supply chain issues?"}, 
+                  {"name": "Higher pricing per unit due to shifting supply flows?"},       
+                  {"name": "More eco-friendly packaging to encourage circular economy?"}
+                ]},
+                {"name": "EXPLORING","children": [
+                    {"name": "Increase in organic/sustainability certification processes?"},
+                    {"name": "New wine tourism destinations?"},  
+                    {"name": "Unusual new wine regions become more mainstream?"},    
+                    {"name": "Less wine waste, more wine-based products?"}
+                ]},
+            ]
+        },
+    ]},
+    {
             "name": "WINEMAKERS","children": [
                 {"name": "SHORT-TERM TECHNIQUES","children": [
                     {"name": "","children":[
@@ -154,31 +178,6 @@ path.link {
                 ]}
             ]
         },
-
-        {"name": "CONSUMERS",
-    "children": [
-        {
-            "name": "","children": [
-                {"name": "TASTING","children": [
-                    {"name": "More variety in flavors and aromas?"},
-                    {"name": "Higher alcohol level on average?"},
-                    {"name": "More natural wines become available?"}
-                ]},
-                {"name": "BUYING","children": [
-                  {"name": "More marketing around lower alcohol content options?"}, 
-                  {"name": "Recurring supply chain issues?"}, 
-                  {"name": "Higher pricing per unit due to shifting supply flows?"},       
-                  {"name": "More eco-friendly packaging to encourage circular economy?"}
-                ]},
-                {"name": "EXPLORING","children": [
-                    {"name": "Increase in organic/sustainability certification processes?"},
-                    {"name": "New wine tourism destinations?"},  
-                    {"name": "Unusual new wine regions become more mainstream?"},    
-                    {"name": "Less wine waste, more wine-based products?"}
-                ]},
-            ]
-        },
-    ]}
     ]
 };
 
@@ -213,7 +212,7 @@ function toggleAll(d) {
 
   // Initialize the display to show a few nodes.
   root.children.forEach(toggleAll);
-  // toggle(root.children[1]);
+  toggle(root.children[1]);
   // toggle(root.children[1].children[2]);
   // toggle(root.children[9]);
   // toggle(root.children[9].children[0]);
@@ -222,7 +221,7 @@ function toggleAll(d) {
 
 
 function update(source) {
-  var duration = d3.event && d3.event.altKey ? 5000 : 2500;
+  var duration = d3.event && d3.event.altKey ? 1000 : 750;
 
   // Compute the new tree layout.
   var nodes = tree.nodes(root).reverse();
