@@ -7,13 +7,13 @@ const titleDiv = "" ;
 const bylineDiv = "Data Visualization Final Project | Parsons School of Design | May 2022";
 
 const descriptionDiv2 =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition2.html"></iframe>';
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="Transition/transition2.html"></iframe>';
 
 const descriptionDiv3 =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition3.html"></iframe>';
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition/transition3.html"></iframe>';
 
 const descriptionDiv4 =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition4.html"></iframe>';
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition/transition4.html"></iframe>';
 
 var config = {
     style: 'mapbox://styles/kerby418/cl1mm4ra5000514p82p2zivs5',
