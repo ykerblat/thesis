@@ -6,9 +6,9 @@ const titleDiv = "" ;
 
 const bylineDiv = "Data Visualization Final Project | Parsons School of Design | May 2022";
 
-const descriptionDiv2 =
-"<h2>Forced to work and take the subway</h3>" +
-'<img src="images/Chapter_2_Image.jpg">';
+// const descriptionDiv2 =
+// "<h2>Forced to work and take the subway</h3>" +
+// '<img src="images/Chapter_2_Image.jpg">';
 
 const descriptionDiv3 =
 '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
@@ -45,14 +45,14 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
-                    layer: 'wineRegions',
+                    layer: 'WineRisk_classification',
                     opacity: 0.8,
                     
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'wineRegions',
+                    layer: 'WineRisk_classification',
                     opacity: 0.5,
                 }
             ]
@@ -121,7 +121,7 @@ var config = {
             alignment: 'full',
             title: '',
             image: '',
-            description: descriptionDiv2,
+            description: descriptionDiv,
             location: {
                 // center: [17.96700, 28.25215],
                 // zoom: 1.73,
