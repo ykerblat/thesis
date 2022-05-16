@@ -6,12 +6,11 @@ const titleDiv = "" ;
 
 const bylineDiv = "Data Visualization Final Project | Parsons School of Design | May 2022";
 
-// const descriptionDiv2 =
-// "<h2>Forced to work and take the subway</h3>" +
-// '<img src="images/Chapter_2_Image.jpg">';
+const descriptionDiv2 =
+'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="transition2.html"></iframe>';
 
-const descriptionDiv3 =
-'<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
+// const descriptionDiv3 =
+// '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
 
 
 var config = {
@@ -45,14 +44,14 @@ var config = {
             callback: "",
             onChapterEnter: [
                 {
-                    layer: 'WineRisk',
+                    layer: 'wineRisk',
                     opacity: 1,
                     
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'WineRisk',
+                    layer: 'wineRisk',
                     opacity: 0,
                 }
             ]
@@ -63,7 +62,7 @@ var config = {
             alignment: 'full',
             title: 'Where is the wine industry thriving? A quick look at export revenues ',
             image: '',
-            description: 'The wine industry is thriving and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but other regions have also been expanding very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
+            description: 'The wine industry is in full expansion and we have never consumed so much wine from different places. Today, half of the world’s wine exports come from two countries, France and Italy (3/4 of wines come from Europe) but other regions have been catching up very quickly. <iframe width="100%" height="920" frameborder="0" scrolling="no" src="charts/BubbleGrapes.html"></iframe>',
             location: {
                 center: [17.96700, 28.25215],
                 zoom: 1.73,
