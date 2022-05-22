@@ -1,3 +1,4 @@
+// require('dotenv').config()
 
 const descriptionDiv =
 '<iframe width="100%" height="1080" frameborder="0" scrolling="no" src="hero_video.html"></iframe>';
