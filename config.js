@@ -224,50 +224,50 @@ var config = {
                 }
             ]
         },
-        //  {
-        //     id: 'CH2-2',
-        //     alignment: 'left',
-        //     title: 'The Bordeaux wine region has some of the most expensive vineyard domains in Europe',
-        //     image: '',
-        //     description: '<iframe width="80%" height="500" frameborder="0" scrolling="no" src="charts/glassHands.html"></iframe>',
-        //     location: {
-        //         center: [-0.90492, 44.58133],
-        //         zoom: 8.30,
-        //         pitch: 55.00,
-        //         bearing: -36.80
-        //     },
-        //     mapAnimation: "flyTo",
-        //     rotateAnimation: false,
-        //     callback: "",
-        //     onChapterEnter: [
-        //         {
-        //             layer: 'bordeaux-pricing',
-        //             opacity: 1,
-        //         },
-        //                         {
-        //             layer: 'redWine',
-        //             opacity: 1,
-        //         },
-        //         {
-        //             layer: 'whiteWine',
-        //             opacity: 1,
-        //         }
-        //     ],
-        //     onChapterExit: [
-        //                         {
-        //             layer: 'redWine',
-        //             opacity: 0
-        //         },
-        //         {
-        //             layer: 'bordeaux-pricing',
-        //             opacity: 0,},
-        //         {
-        //             layer: 'whiteWine',
-        //             opacity: 0,
-        //         }
+         {
+            id: 'CH2-2',
+            alignment: 'left',
+            title: 'The Bordeaux wine region has some of the most expensive vineyard domains in Europe',
+            image: '',
+            description: '<iframe width="80%" height="500" frameborder="0" scrolling="no" src="charts/glassHands.html"></iframe>',
+            location: {
+                center: [-0.90492, 44.58133],
+                zoom: 8.30,
+                pitch: 55.00,
+                bearing: -36.80
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                {
+                    layer: 'bordeaux-pricing',
+                    opacity: 1,
+                },
+                                {
+                    layer: 'redWine',
+                    opacity: 1,
+                },
+                {
+                    layer: 'whiteWine',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'redWine',
+                    opacity: 0
+                },
+                {
+                    layer: 'bordeaux-pricing',
+                    opacity: 0,},
+                {
+                    layer: 'whiteWine',
+                    opacity: 0,
+                }
 
-        //     ]
-        // },
+            ]
+        },
         {
             id: 'CH2-3',
             alignment: 'left',
