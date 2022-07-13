@@ -188,43 +188,6 @@ var config = {
             ]
         },
         {
-            id: '',
-            alignment: 'center',
-            hidden:false,
-            title: '',
-            image: '',
-            description: 'Yet a close zoom at recent weather events in the Bordeaux region shows signs of uncertainty...',
-            location: {
-                center: [-0.57058, 45.88270],
-                zoom: 6.00,
-                pitch: 48.50,
-                bearing: 1.60
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [
-                {
-                    layer: 'France_AOC_highZoom',
-                    opacity: 1,
-                },
-                {
-                    layer: 'france-gironde',
-                    opacity: 0.5,
-                }
-            ],
-            onChapterExit: [
-                                {
-                    layer: 'France_AOC_highZoom',
-                    opacity: 0,
-                },
-                {
-                    layer: 'france-gironde',
-                    opacity: 0,
-                }
-            ]
-        },
-         {
             id: 'CH2-2',
             alignment: 'left',
             title: 'The Bordeaux wine region has some of the most expensive vineyard domains in Europe',
@@ -268,6 +231,44 @@ var config = {
 
             ]
         },
+        {
+            id: '',
+            alignment: 'center',
+            hidden:false,
+            title: '',
+            image: '',
+            description: 'Yet a close zoom at recent weather events in the Bordeaux region shows signs of uncertainty...',
+            location: {
+                center: [-0.57058, 45.88270],
+                zoom: 6.00,
+                pitch: 48.50,
+                bearing: 1.60
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                {
+                    layer: 'France_AOC_highZoom',
+                    opacity: 1,
+                },
+                {
+                    layer: 'france-gironde',
+                    opacity: 0.5,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'France_AOC_highZoom',
+                    opacity: 0,
+                },
+                {
+                    layer: 'france-gironde',
+                    opacity: 0,
+                }
+            ]
+        },
+
         {
             id: 'CH2-3',
             alignment: 'left',
@@ -370,43 +371,43 @@ var config = {
                 }
             ]
         },
-        {
+        // {
 
-            id: 'USA-v2',
-            alignment: 'right',
-            title: 'The development of the wine industry in the US in last 20 years',
-            image: '',
-            description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.<br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/radialBarChart.html"></iframe>',
-            location: {
-                center: [-82.73387, 38.03087],
-                zoom: 3.64,
-                pitch: 0.00,
-                bearing: 0.00
-            },
-            mapAnimation: "flyTo",
-            rotateAnimation: false,
-            callback: "",
-            onChapterEnter: [
-                {
-                    layer: 'whiteWine',
-                    opacity: 1,
-                },
-                {
-                    layer: 'redWine',
-                    opacity: 1,
-                }
-            ],
-            onChapterExit: [
-                                {
-                    layer: 'whiteWine',
-                    opacity: 0,
-                },
-                {
-                    layer: 'redWine',
-                    opacity: 0,
-                }
-            ]
-        },
+        //     id: 'USA-v2',
+        //     alignment: 'right',
+        //     title: 'The development of the wine industry in the US in last 20 years',
+        //     image: '',
+        //     description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.<br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/radialBarChart.html"></iframe>',
+        //     location: {
+        //         center: [-82.73387, 38.03087],
+        //         zoom: 3.64,
+        //         pitch: 0.00,
+        //         bearing: 0.00
+        //     },
+        //     mapAnimation: "flyTo",
+        //     rotateAnimation: false,
+        //     callback: "",
+        //     onChapterEnter: [
+        //         {
+        //             layer: 'whiteWine',
+        //             opacity: 1,
+        //         },
+        //         {
+        //             layer: 'redWine',
+        //             opacity: 1,
+        //         }
+        //     ],
+        //     onChapterExit: [
+        //                         {
+        //             layer: 'whiteWine',
+        //             opacity: 0,
+        //         },
+        //         {
+        //             layer: 'redWine',
+        //             opacity: 0,
+        //         }
+        //     ]
+        // },
         {
             id: 'CH3-31',
             alignment: 'right',
