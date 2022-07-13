@@ -370,43 +370,43 @@ var config = {
                 }
             ]
         },
-        // {
+        {
 
-        //     id: 'USA-v2',
-        //     alignment: 'right',
-        //     title: 'The development of the wine industry in the US in last 20 years',
-        //     image: '',
-        //     description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.<br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/radialBarChart.html"></iframe>',
-        //     location: {
-        //         center: [-82.73387, 38.03087],
-        //         zoom: 3.64,
-        //         pitch: 0.00,
-        //         bearing: 0.00
-        //     },
-        //     mapAnimation: "flyTo",
-        //     rotateAnimation: false,
-        //     callback: "",
-        //     onChapterEnter: [
-        //         {
-        //             layer: 'whiteWine',
-        //             opacity: 1,
-        //         },
-        //         {
-        //             layer: 'redWine',
-        //             opacity: 1,
-        //         }
-        //     ],
-        //     onChapterExit: [
-        //                         {
-        //             layer: 'whiteWine',
-        //             opacity: 0,
-        //         },
-        //         {
-        //             layer: 'redWine',
-        //             opacity: 0,
-        //         }
-        //     ]
-        // },
+            id: 'USA-v2',
+            alignment: 'right',
+            title: 'The development of the wine industry in the US in last 20 years',
+            image: '',
+            description: 'The number of wineries in the United States grew four and a half times from 2001 to 2020.<br><iframe width="100%" height="500" frameborder="0" scrolling="no" src="charts/radialBarChart.html"></iframe>',
+            location: {
+                center: [-82.73387, 38.03087],
+                zoom: 3.64,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            mapAnimation: "flyTo",
+            rotateAnimation: false,
+            callback: "",
+            onChapterEnter: [
+                {
+                    layer: 'whiteWine',
+                    opacity: 1,
+                },
+                {
+                    layer: 'redWine',
+                    opacity: 1,
+                }
+            ],
+            onChapterExit: [
+                                {
+                    layer: 'whiteWine',
+                    opacity: 0,
+                },
+                {
+                    layer: 'redWine',
+                    opacity: 0,
+                }
+            ]
+        },
         {
             id: 'CH3-31',
             alignment: 'right',
